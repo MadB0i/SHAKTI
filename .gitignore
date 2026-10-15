@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.vite/
+evidence/
+legacy-source/
+__pycache__/
+incoming-assets/
+public/videos/divine-catch.mp4
+public/videos/divine-finale.mp4
+public/art/references/
+public/art/durga-lion.png
+public/art/durga-reveal.png

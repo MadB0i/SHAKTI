@@ -1,0 +1,22 @@
+{
+  "publicReleaseApproved": true,
+  "footageRightsConfirmed": true,
+  "footageEvidence": "docs/COMFYUI-MODEL-LICENSES.md and docs/video-generation-provenance.json \u2014 owner-confirmed local Wan2.2 generation; official Apache-2.0 license and generated-output use statement reviewed, with notices retained.",
+  "status": "Owner-authorised release proceeding after Wan2.2 license verification. Technical checks passed; public results will be recorded only after remote confirmation.",
+  "version": "1.0.0",
+  "stage": "release-verified-ready-to-publish",
+  "approvalEvidence": "Owner requested normal push, annotated v1.0.0 tag, GitHub Release and Pages deployment in this chat on 15 October 2026, conditional on distribution rights and checks. No additional design approval required.",
+  "footageProvenance": {
+    "credit": "AI-generated cinematic footage: Wan2.2 via local ComfyUI; edited/exported in Clipchamp",
+    "generationMethod": "Local ComfyUI (owner-confirmed correction)",
+    "generationDate": "Approximately 14\u201315 October 2026 (owner statement)",
+    "editingExport": "Clipchamp (metadata corroborated)",
+    "modelCheckpoints": "Wan2.2 family; exact variant and binary hash not retained",
+    "modelLicenses": "Official Wan2.2 models: Apache-2.0; generated-output statement verified",
+    "inputs": "Owner reports own SHAKTI WebGL scenes and project-specific ChatGPT-generated artwork.",
+    "audio": "Source embedded audio excluded from delivery; independently synthesized original score used.",
+    "modelFamily": "Wan2.2 (owner-confirmed)"
+  },
+  "remainingMediaInput": null,
+  "publicationHandoff": "docs/PUBLICATION-HANDOFF-v1.0.0.md"
+}

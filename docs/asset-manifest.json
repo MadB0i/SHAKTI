@@ -1,0 +1,182 @@
+{
+  "version": "1.0.0",
+  "release": "v1.0.0 — owner-authorised; documented license basis verified",
+  "base": "/SHAKTI/",
+  "total_bytes": 25986726,
+  "files": [
+    {
+      "file": "DEPENDENCY-LICENSES.txt",
+      "bytes": 4694,
+      "sha256": "f8ed10f4aefe54515978e42960fc228a51db272548885f49244f0a9304e49004",
+      "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
+    },
+    {
+      "file": "LICENSE",
+      "bytes": 1314,
+      "sha256": "d9c177057680c5ccea6f3e9973339b80c72637c0c1ebebfe3a81a5a335a6f13c",
+      "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
+    },
+    {
+      "file": "WAN2.2-NOTICE.txt",
+      "bytes": 933,
+      "sha256": "e8792e0d4b57232ffc04088df467350eb1126f9d37512555b6c6aa67418ff6b7",
+      "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
+    },
+    {
+      "file": "art/cosmic-background.png",
+      "bytes": 2788686,
+      "sha256": "d498ac974a911cef169955ec6ccea96c794b4578d99029db71f2d60c7133d0b8",
+      "origin_terms": "Owner-confirmed OpenAI-assisted SHAKTI artwork; no exclusive copyright claim"
+    },
+    {
+      "file": "art/trishul/keshav/ATTRIBUTION.md",
+      "bytes": 1199,
+      "sha256": "5380f1f25ac4dca47315e930e5d5edbd5b298c53209e4848d78eee99c422c107",
+      "origin_terms": "keshavckm1: CC BY 4.0; retained license, attribution and modifications"
+    },
+    {
+      "file": "art/trishul/keshav/license.txt",
+      "bytes": 656,
+      "sha256": "296c0244a08341961fffeb2452da1f9855151c952281b8c67c68f0f2c4cd781b",
+      "origin_terms": "keshavckm1: CC BY 4.0; retained license, attribution and modifications"
+    },
+    {
+      "file": "art/trishul/keshav/trishul-flight.glb",
+      "bytes": 7366880,
+      "sha256": "fae33574c0a9c73ab4448b0d53ae8c93f92a3a2f7334e988d0a28d19e64e296c",
+      "origin_terms": "keshavckm1: CC BY 4.0; retained license, attribution and modifications"
+    },
+    {
+      "file": "art/trishul/trishul-hero.glb",
+      "bytes": 2469096,
+      "sha256": "6ff357ab96de9b4d91b69e95521d5fd8306ba65d7d55a302ef6ae077532bcd0d",
+      "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
+    },
+    {
+      "file": "assets/App-Co2WomH5.js",
+      "bytes": 769159,
+      "sha256": "34565a6e6f48a040b11499c48cbcde69625140d6436d8eaaba4550ea6d194d3e",
+      "origin_terms": "Original authored contributions plus bundled dependencies; see DEPENDENCY-LICENSES.txt (GSAP separate proprietary license)"
+    },
+    {
+      "file": "assets/Cinzel-Dzu6Mfm8.ttf",
+      "bytes": 125468,
+      "sha256": "f4d83d34d1f6c741193e4acf4b3dff9531e5a67b6aa65228d00a7db72a4e0f34",
+      "origin_terms": "Cinzel / Noto Serif Bengali: SIL OFL 1.1; retained font notices"
+    },
+    {
+      "file": "assets/Discover-CSzE7dTT.js",
+      "bytes": 24711,
+      "sha256": "e1df62fcb342b5526594a9b907a14c9e31371230b29101b16a3a6e9420ad0d4f",
+      "origin_terms": "Original authored contributions plus bundled dependencies; see DEPENDENCY-LICENSES.txt (GSAP separate proprietary license)"
+    },
+    {
+      "file": "assets/Discover-Cu0ybEXk.css",
+      "bytes": 14998,
+      "sha256": "f5a33de4642b8a2f3252fab2855fac689c67b6132233ec9562c6e5f45a65c5b5",
+      "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
+    },
+    {
+      "file": "assets/NotoSerifBengali-Br7R9OGU.ttf",
+      "bytes": 981812,
+      "sha256": "083180a7b47cf3b101ed55a8724aa1b38869daa9baf23b7cf198f9d225365aba",
+      "origin_terms": "Cinzel / Noto Serif Bengali: SIL OFL 1.1; retained font notices"
+    },
+    {
+      "file": "assets/index-CIagffY-.js",
+      "bytes": 144106,
+      "sha256": "c7dcf9039e617cc2b9aee2433c235a181064ebbad5d527129faa989551f45774",
+      "origin_terms": "Original authored contributions plus bundled dependencies; see DEPENDENCY-LICENSES.txt (GSAP separate proprietary license)"
+    },
+    {
+      "file": "assets/index-DVg_ShJP.css",
+      "bytes": 11498,
+      "sha256": "6a7f61e91674b5fdbe8f6ea10a7861023fe1ffec631356c51a2e68dcdf787763",
+      "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
+    },
+    {
+      "file": "audio/shakti-original.m4a",
+      "bytes": 737390,
+      "sha256": "f5db223bb3369e4d6816e23cfa98f469b8363b8ec1cb917a1ba1d39ec47ae1cb",
+      "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
+    },
+    {
+      "file": "credits.html",
+      "bytes": 2118,
+      "sha256": "ccd4d36ee7469b55012e91ea6dc301178724195d689bffccd5f5249c7a06abb6",
+      "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
+    },
+    {
+      "file": "discover/index.html",
+      "bytes": 1240,
+      "sha256": "e44ac7746053fa65769c8f6e12218ebe36e012f12ebe3d0d9e3f51c6743e8548",
+      "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
+    },
+    {
+      "file": "fonts/ATTRIBUTION.md",
+      "bytes": 770,
+      "sha256": "d92e9fec607c76eaa0251ecbd93a8c3eb4045732312d0b39ff1efc4277d6a71a",
+      "origin_terms": "Cinzel / Noto Serif Bengali: SIL OFL 1.1; retained font notices"
+    },
+    {
+      "file": "fonts/Cinzel-OFL.txt",
+      "bytes": 4383,
+      "sha256": "f2b3029aba64c378bf0963b62945eee15e564fe4330b934c8f2eb058282b5e83",
+      "origin_terms": "Cinzel / Noto Serif Bengali: SIL OFL 1.1; retained font notices"
+    },
+    {
+      "file": "fonts/NotoSerifBengali-OFL.txt",
+      "bytes": 4383,
+      "sha256": "754f0e221aa7d5a915489f3bf1f20fe53ddc35ab2834a4d91656d78f9622de70",
+      "origin_terms": "Cinzel / Noto Serif Bengali: SIL OFL 1.1; retained font notices"
+    },
+    {
+      "file": "index.html",
+      "bytes": 1211,
+      "sha256": "74ab1827756f278048e2e489a31ff8fdba646bfd6d8174c84520ac2450254f99",
+      "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
+    },
+    {
+      "file": "licenses/Wan2.2-Apache-2.0.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
+    },
+    {
+      "file": "media/shakti-film.mp4",
+      "bytes": 4452240,
+      "sha256": "33dbb48ea9212f2f009621a2ebc08e3635e516af5c5dfea7cddd286dae04e360",
+      "origin_terms": "Owner-confirmed local Wan2.2 via ComfyUI; Clipchamp edit/export; official Apache-2.0 model license and generated-output use statement reviewed"
+    },
+    {
+      "file": "posters/finale.jpg",
+      "bytes": 72615,
+      "sha256": "153127be558aeda28e181adb5b256849560ea50bba9aa6f139d4378829d33f2d",
+      "origin_terms": "Owner-confirmed local Wan2.2 via ComfyUI; Clipchamp edit/export; official Apache-2.0 model license and generated-output use statement reviewed"
+    },
+    {
+      "file": "shakti-icon.svg",
+      "bytes": 547,
+      "sha256": "b0942772d71f94382762b7aebde99817b6afedb7f7c028481a71a7866d658a54",
+      "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
+    },
+    {
+      "file": "social/shakti-social.jpg",
+      "bytes": 107815,
+      "sha256": "fd3894503dd837025d43d31096e95257de06afecd8c35f2b39ca962bb4056894",
+      "origin_terms": "Owner-confirmed local Wan2.2 via ComfyUI; Clipchamp edit/export; official Apache-2.0 model license and generated-output use statement reviewed"
+    },
+    {
+      "file": "videos/playback/divine-catch.mp4",
+      "bytes": 689955,
+      "sha256": "33f80073c5c9a77aa0afee10a041df02911b8908449c3d7ac90dc7f0a35c14cc",
+      "origin_terms": "Owner-confirmed local Wan2.2 via ComfyUI; Clipchamp edit/export; official Apache-2.0 model license and generated-output use statement reviewed"
+    },
+    {
+      "file": "videos/playback/divine-finale.mp4",
+      "bytes": 5195492,
+      "sha256": "cd21fb90efb04c741d4a5fcca303176712cb6fe26de67a549e109215f7fafd24",
+      "origin_terms": "Owner-confirmed local Wan2.2 via ComfyUI; Clipchamp edit/export; official Apache-2.0 model license and generated-output use statement reviewed"
+    }
+  ]
+}

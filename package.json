@@ -1,0 +1,40 @@
+{
+  "name": "shakti-flame-study",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run typecheck && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "python tests/launch_regressions.py",
+    "check:release": "node scripts/check-release.mjs",
+    "test:discover": "python tests/discover_release.py"
+  },
+  "dependencies": {
+    "gsap": "3.15.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "three": "0.169.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.31",
+    "@types/react-dom": "18.3.7",
+    "@types/three": "0.169.0",
+    "@vitejs/plugin-react": "4.7.0",
+    "typescript": "5.6.3",
+    "vite": "5.4.21"
+  },
+  "description": "SHAKTI \u2014 The Awakening. A 30-second hybrid cinematic with The Story of Shakti cultural companion.",
+  "author": "Rupjyoti Talukdar (MadB0i)",
+  "copyright": "\u00a9 2026 Rupjyoti Talukdar \u2014 original authored contributions.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MadB0i/SHAKTI.git"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}

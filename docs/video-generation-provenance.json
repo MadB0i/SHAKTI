@@ -1,0 +1,47 @@
+{
+  "generation_method": "Local ComfyUI",
+  "provenance_basis": "Owner correction in this chat, 15 October 2026",
+  "editing_export": "Clipchamp; corroborated by supplied MP4 metadata",
+  "clips": [
+    {
+      "file": "divine-catch.mp4",
+      "supplied_source_sha256": "566b4494483f55c1e0bcef1d9a1245191ec0da195e0abe0ed67a755d9be33d3c",
+      "models": [
+        {
+          "family": "Wan2.2",
+          "license": "Apache-2.0",
+          "identity_basis": "owner confirmation",
+          "exact_variant_and_binary_hash": null
+        }
+      ],
+      "workflow_record": null
+    },
+    {
+      "file": "divine-finale.mp4",
+      "supplied_source_sha256": "75cbf7cb5235362bbcf5adae45b01dc9dd5700dc8a04c3f391f44d5dc8df7384",
+      "models": [
+        {
+          "family": "Wan2.2",
+          "license": "Apache-2.0",
+          "identity_basis": "owner confirmation",
+          "exact_variant_and_binary_hash": null
+        }
+      ],
+      "workflow_record": null
+    }
+  ],
+  "model_license_status": "Official Wan2.2 family license and generated-output statement verified; owner-confirmed use of Wan2.2 supports this release.",
+  "software_license_reference": "https://raw.githubusercontent.com/Comfy-Org/ComfyUI/master/LICENSE",
+  "software_license_scope": "GPLv3 software license; not blanket permission for every model/checkpoint or its generated outputs. ComfyUI and model weights are not bundled in this website.",
+  "inputs": "Owner reports own SHAKTI WebGL scenes and project-specific ChatGPT-generated artwork.",
+  "audio": "Source embedded audio excluded from delivery; independently synthesized original score used.",
+  "distribution_clearance_confirmed": true,
+  "model_family": "Wan2.2",
+  "model_identity_basis": "Owner explicitly confirmed Wan2.2 in this chat, 15 October 2026",
+  "model_license": "Apache-2.0",
+  "license_source": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/1ea34ff48f87168174e12956e200b1d908b1c5ff/LICENSE.txt",
+  "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+  "output_statement": "https://github.com/Wan-Video/Wan2.2#license-agreement",
+  "exact_checkpoint_variant_and_hash": "Not retained; no exact binary inspection is claimed.",
+  "additional_generation_models": "None separately identified or reported; no additional model details invented."
+}

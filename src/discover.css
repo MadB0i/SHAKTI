@@ -1,0 +1,138 @@
+/* Celestial museum catalogue: a quiet extension of SHAKTI's existing palette. */
+.discover {
+  --base:#09080d; --surface:#141017; --ink:#f5e7cc; --ink-2:#c9baa9; --ink-3:#b8a797;
+  --accent:#eab969; --line:#806950; --crimson:#531b29; --violet:#241933;
+  --display:Cinzel,Georgia,serif; --narrative:Georgia,'Times New Roman',serif;
+  --step--1:.75rem; --step-0:1rem; --step-1:1.333rem; --step-2:1.777rem;
+  --step-3:2.369rem; --step-4:3.157rem; --step-5:4.209rem; --step-6:5.61rem;
+  --space-2xs:.25rem; --space-xs:.5rem; --space-s:1rem; --space-m:1.5rem;
+  --space-l:2rem; --space-xl:3rem; --space-2xl:4.5rem; --space-3xl:7rem;
+  --radius:0; --shadow-near:0 2px 8px #0004; --shadow-far:0 24px 80px #0005;
+  --fast:120ms; --normal:220ms; --slow:420ms; --ease:cubic-bezier(.2,0,0,1);
+  background:var(--base); color:var(--ink); min-height:100svh; overflow:clip;
+  font:var(--step-0)/1.7 var(--text);
+}
+.discover :is(h1,h2,h3,p,figure){margin:0}
+.discover :is(h1,h2,h3){font-weight:400;text-wrap:balance}
+.discover a{color:inherit;text-underline-offset:5px}
+.discover :is(a,button,summary,input):focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+.discover a:hover{color:var(--accent)}
+.discover a:active{opacity:.75}
+.discover .museum-header{position:relative;inset:auto;pointer-events:auto;display:flex;align-items:center;gap:var(--space-l);padding:var(--space-m) var(--space-2xl);border-bottom:1px solid var(--line);z-index:3;background:var(--base)}
+.wordmark{font:var(--step-2)/1 var(--display);letter-spacing:.22em;text-decoration:none}
+.museum-header nav{display:flex;gap:var(--space-l);margin-left:auto;align-items:center;font-size:var(--step--1);letter-spacing:.08em}
+.museum-header nav a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
+.museum-header nav [aria-current]{border-bottom:1px solid var(--accent);color:var(--accent)}
+.museum-edition{font-size:var(--step--1);letter-spacing:.18em;color:var(--ink-3)}
+.discover .skip-link{position:absolute;top:var(--space-s);left:var(--space-s);transform:translateY(-200%);z-index:10;padding:var(--space-s);background:var(--base)}
+.discover .skip-link:focus{transform:none}
+.discover-hero{position:relative;display:grid;grid-template-columns:1.1fr 1fr;align-items:center;min-height:710px;padding:var(--space-2xl) var(--space-2xl) var(--space-xl);gap:var(--space-xl);background:radial-gradient(ellipse at 78% 46%,#531b294a,transparent 42%),radial-gradient(ellipse at 38% 0%,#24193375,transparent 58%)}
+.hero-copy{position:relative;z-index:1;padding-left:var(--space-l);max-width:700px}
+.museum-kicker{display:flex;align-items:center;gap:var(--space-s);font-size:var(--step--1);text-transform:uppercase;letter-spacing:.2em;color:var(--accent)}
+.museum-kicker::before{content:'';width:var(--space-l);height:1px;background:var(--accent)}
+.discover h1{font:400 clamp(var(--step-4),6.3vw,var(--step-6))/1.08 var(--display);letter-spacing:-.035em;margin:var(--space-l) 0}
+.discover h1 em{display:block;font-family:var(--narrative);font-weight:400;color:var(--accent)}
+.hero-deck{font:var(--step-1)/1.7 var(--narrative);color:var(--ink-2);max-width:34ch}
+.hero-foot{margin-top:var(--space-xl);display:flex;gap:var(--space-l);align-items:center;flex-wrap:wrap}
+.museum-link{display:inline-flex;gap:var(--space-m);align-items:center;min-height:44px;text-decoration:none;border-bottom:1px solid var(--accent);font-size:var(--step--1);letter-spacing:.1em}
+.hero-foot>span{font-size:var(--step--1);color:var(--ink-3)}
+.devi-art{position:relative;perspective:900px;max-width:570px;width:100%;justify-self:center}
+.devi-art svg{width:100%;height:auto;display:block;transform:rotateX(var(--tilt-y,0deg)) rotateY(var(--tilt-x,0deg));transition:transform var(--slow) var(--ease);filter:drop-shadow(0 0 40px #eab9690b)}
+.devi-art figcaption{text-align:center;font-size:var(--step--1);letter-spacing:.1em;color:var(--ink-3);margin-top:var(--space-xs)}
+.chapter-nav{display:flex;flex-wrap:wrap;padding:var(--space-s) var(--space-2xl);gap:var(--space-l);border-block:1px solid var(--line);align-items:center;background:#100d13}
+.chapter-nav>span{font:var(--step--1) var(--display);color:var(--accent);margin-right:auto;letter-spacing:.16em}
+.chapter-nav a{display:inline-flex;align-items:center;min-height:44px;font-size:var(--step--1);text-decoration:none;gap:var(--space-xs)}
+.chapter-nav a span{color:var(--ink-3)}
+.museum-section{padding:var(--space-3xl) var(--space-2xl);max-width:1600px;margin:auto;scroll-margin-top:var(--space-l)}
+.section-intro{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-xl);align-items:end;margin-bottom:var(--space-xl)}
+.section-intro h2,.myth-copy h2,.regional h2{font:var(--step-4)/1.2 var(--narrative);margin-top:var(--space-m)}
+.section-intro>p,.section-intro>div>p:last-child{color:var(--ink-2);max-width:50ch}
+.section-number{font-size:var(--step--1);letter-spacing:.18em;color:var(--accent);text-transform:uppercase}
+.calendar-heading{display:flex;justify-content:space-between;align-items:center;gap:var(--space-s);margin-bottom:var(--space-l)}
+.calendar-heading p{color:var(--ink-2);font-size:var(--step--1);letter-spacing:.1em}
+.calendar-days{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:var(--space-xs)}
+.calendar-fieldset{border:0;margin:0;padding:0;min-width:0}
+.day-choice{position:relative;display:grid;cursor:pointer;perspective:600px;min-width:0}
+.day-choice input{position:absolute;z-index:1;top:var(--space-s);right:var(--space-s);accent-color:var(--accent);width:20px;height:20px;margin:0}
+.day-face{display:flex;flex-direction:column;min-height:210px;padding:var(--space-m);border:1px solid var(--line);background:linear-gradient(145deg,#201722,var(--surface));transition:transform var(--normal),border-color var(--normal),background var(--normal)}
+.day-choice:hover .day-face{transform:translateY(-4px) rotateX(2deg);border-color:var(--accent)}
+.day-choice input:checked+.day-face{border-color:var(--accent);background:linear-gradient(145deg,#482131,#20151d)}
+.day-choice input:focus-visible+.day-face{outline:2px solid var(--accent);outline-offset:5px}
+.day-face .weekday{font-size:var(--step--1);color:var(--ink-2);text-transform:uppercase;letter-spacing:.12em}
+.day-face strong{font:var(--step-4)/1.4 var(--narrative);color:var(--accent);font-weight:400}
+.day-face .day-name{font:var(--step-0)/1.4 var(--display);margin-top:auto}
+.day-face .bengali-date{font-size:var(--step--1);color:var(--ink-3);margin-top:var(--space-xs)}
+.day-description{display:grid;grid-template-columns:1fr 2fr;gap:var(--space-xl);padding:var(--space-l);border:1px solid var(--line);margin-top:var(--space-m);background:var(--surface);min-height:170px;align-items:center}
+.day-description h3{font:var(--step-2)/1.4 var(--narrative)}
+.day-description p{color:var(--ink-2);max-width:65ch}
+.calendar-note{display:flex;align-items:start;gap:var(--space-m);margin-top:var(--space-l);font-size:var(--step--1);color:var(--ink-2);max-width:95ch}
+.calendar-note span{color:var(--accent);white-space:nowrap}
+.source-link{display:inline-block;font-size:var(--step--1);color:var(--ink-2)!important;margin-top:var(--space-s);min-height:24px}
+.belief-panel{border-block:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;margin-top:var(--space-2xl);background:radial-gradient(ellipse at 50% 100%,#531b292b,transparent 70%)}
+.vehicle{display:grid;grid-template-columns:120px 1fr;gap:var(--space-l);padding:var(--space-xl) var(--space-l);align-items:center}
+.vehicle:first-child{border-right:1px solid var(--line)}
+.vehicle svg{width:100%;height:auto;color:var(--accent)}
+.vehicle h3{font:var(--step-2)/1.4 var(--narrative);margin:var(--space-xs) 0}
+.vehicle p{font-size:var(--step--1);color:var(--ink-2)}
+.belief-qualification{color:var(--ink-2);font-size:var(--step--1);max-width:100ch;margin-top:var(--space-m)!important}
+.myth-spread{max-width:none;display:grid;grid-template-columns:1fr 1fr;gap:var(--space-2xl);background:radial-gradient(ellipse at 18% 50%,#531b2944,transparent 55%),var(--surface);align-items:center}
+.myth-emblem{display:grid;place-items:center;aspect-ratio:1;max-width:480px;justify-self:center;width:100%;position:relative}
+.myth-emblem::before,.myth-emblem::after{content:'';position:absolute;inset:6%;border:1px solid var(--line);border-radius:50%}
+.myth-emblem::after{inset:15%;border-style:dashed;opacity:.6}
+.myth-emblem svg{width:66%;height:auto;color:var(--accent)}
+.myth-emblem>span{position:absolute;bottom:0;font:var(--step--1) var(--display);letter-spacing:.22em;color:var(--ink-3)}
+.myth-copy{max-width:56ch}
+.myth-copy h2{margin-bottom:var(--space-l)}
+.myth-copy p{color:var(--ink-2);margin-bottom:var(--space-m)}
+.myth-copy .myth-pull{color:var(--ink);font:var(--step-1)/1.7 var(--narrative)}
+.history-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:var(--space-xl) 0 0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.history-list li{padding:var(--space-l) var(--space-l) var(--space-l) 0;border-bottom:1px solid var(--line)}
+.history-list li+li{padding-left:var(--space-l);border-left:1px solid var(--line)}
+.history-list .era{font:var(--step-2)/1.4 var(--narrative);color:var(--accent)}
+.history-list h3{font:var(--step-1)/1.5 var(--narrative);margin:var(--space-m) 0 var(--space-s)}
+.history-list p{font-size:var(--step-0);color:var(--ink-2)}
+.rituals{padding-top:var(--space-l)}
+.ritual-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-m)}
+.ritual-card{position:relative;border:1px solid var(--line);background:var(--surface);padding:var(--space-l);transition:transform var(--normal) var(--ease)}
+.ritual-card:hover{transform:translateY(-4px)}
+.ritual-art{height:130px;display:grid;place-items:center;background:radial-gradient(ellipse,#531b2955,transparent 70%);margin-bottom:var(--space-l)}
+.ritual-art svg{height:110px;width:150px;color:var(--accent)}
+.ritual-card h3{font:var(--step-2)/1.4 var(--narrative);margin-bottom:var(--space-s)}
+.ritual-card>p{color:var(--ink-2)}
+.ritual-card details{margin-top:var(--space-m);border-top:1px solid var(--line);font-size:var(--step--1)}
+.ritual-card summary{cursor:pointer;min-height:44px;padding:var(--space-s) 0;color:var(--accent)}
+.ritual-card details p{color:var(--ink-2);padding-bottom:var(--space-s)}
+.regional{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-2xl);border-block:1px solid var(--line);background:linear-gradient(130deg,#24193350,#531b2920)}
+.regional h2{margin-bottom:var(--space-l)}
+.regional h3{font:var(--step-2)/1.4 var(--narrative);margin-bottom:var(--space-m)}
+.regional p{color:var(--ink-2);max-width:52ch}
+.regional>div+div{border-left:1px solid var(--line);padding-left:var(--space-2xl)}
+.reading-room{display:grid;grid-template-columns:1fr 2fr;gap:var(--space-2xl);padding-top:var(--space-2xl);padding-bottom:var(--space-2xl)}
+.reading-room h2{font:var(--step-2)/1.4 var(--narrative);margin-bottom:var(--space-s)}
+.reading-room p{font-size:var(--step--1);color:var(--ink-3)}
+.source-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:var(--space-m) var(--space-l)}
+.source-list a{display:inline-flex;min-height:24px;font-size:var(--step--1)}
+.source-list span{display:block;color:var(--ink-3);font-size:var(--step--1)}
+.discover .museum-footer{position:relative;display:flex;align-items:center;justify-content:space-between;gap:var(--space-l);padding:var(--space-xl) var(--space-2xl);border-top:1px solid var(--line)}
+.museum-footer p{font-size:var(--step--1);color:var(--ink-3)}
+.museum-footer .wordmark{font-size:var(--step-1)}
+.museum-footer nav{display:flex;gap:var(--space-l)}
+.museum-footer nav a{display:inline-flex;align-items:center;min-height:44px;font-size:var(--step--1)}
+@media(min-width:1000px) and (prefers-reduced-motion:no-preference){.hero-copy{animation:museum-arrive var(--slow) var(--ease) both}.devi-art{animation:museum-arrive var(--slow) var(--ease) 120ms both}}
+@keyframes museum-arrive{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:1100px){.discover .museum-header,.chapter-nav{padding-inline:var(--space-xl)}.discover-hero,.museum-section{padding-inline:var(--space-xl)}.hero-copy{padding-left:0}.museum-edition{display:none}.day-face{padding:var(--space-s)}.day-face .day-name{font-family:var(--narrative)}.vehicle{grid-template-columns:80px 1fr;gap:var(--space-m)}.history-list{grid-template-columns:1fr 1fr}.history-list li:nth-child(3){border-left:0;padding-left:0}.regional>div+div{padding-left:var(--space-xl)}}
+@media(max-width:700px){
+ .discover .museum-header{padding:var(--space-s) var(--space-m);gap:var(--space-s)}.wordmark{font-size:var(--step-1)}.museum-header nav{gap:var(--space-s);letter-spacing:0}.museum-header nav a{font-size:var(--step--1)}
+ .discover-hero{grid-template-columns:1fr;min-height:auto;padding:var(--space-xl) var(--space-m);gap:var(--space-l)}.discover h1{font-size:clamp(var(--step-4),13vw,var(--step-5))}.hero-deck{font-size:var(--step-0)}.hero-foot{margin-top:var(--space-l)}.devi-art{max-width:350px}.devi-art figcaption{font-size:var(--step--1)}
+ .chapter-nav{padding:var(--space-xs) var(--space-m);gap:var(--space-xs) var(--space-l)}.chapter-nav>span{display:none}.chapter-nav a{flex:1 0 35%}
+ .museum-section{padding:var(--space-2xl) var(--space-m)}.section-intro{grid-template-columns:1fr;gap:var(--space-m)}.section-intro h2,.myth-copy h2,.regional h2{font-size:var(--step-3)}
+ .calendar-heading{align-items:start;flex-direction:column}.calendar-days{grid-template-columns:repeat(3,minmax(0,1fr))}.day-face{min-height:166px;padding:var(--space-s)}.day-face strong{font-size:var(--step-3)}.day-face .day-name{font-size:var(--step-0)}.bengali-date{line-height:1.5}
+ .day-description{grid-template-columns:1fr;gap:var(--space-s);padding:var(--space-m);min-height:240px}.day-description h3{font-size:var(--step-1)}.calendar-note{flex-direction:column;gap:var(--space-xs)}
+ .belief-panel{grid-template-columns:1fr;margin-top:var(--space-xl)}.vehicle{padding:var(--space-l) 0;grid-template-columns:90px 1fr}.vehicle:first-child{border-right:0;border-bottom:1px solid var(--line)}.vehicle h3{font-size:var(--step-1)}
+ .myth-spread{grid-template-columns:1fr;gap:var(--space-xl)}.myth-emblem{max-width:300px;order:2}.myth-copy{order:1}
+ .history-list{grid-template-columns:1fr}.history-list li,.history-list li+li{border-left:0;padding:var(--space-l) 0}.history-list h3{margin-top:var(--space-xs)}
+ .rituals{padding-top:var(--space-s)}.ritual-grid{grid-template-columns:1fr}.ritual-card{padding:var(--space-m)}.ritual-art{height:100px;margin-bottom:var(--space-m)}
+ .regional{grid-template-columns:1fr;gap:var(--space-xl)}.regional>div+div{padding:var(--space-xl) 0 0;border-left:0;border-top:1px solid var(--line)}
+ .reading-room{grid-template-columns:1fr;gap:var(--space-l)}.source-list{grid-template-columns:1fr}.discover .museum-footer{padding:var(--space-l) var(--space-m);flex-wrap:wrap}.museum-footer nav{gap:var(--space-l)}
+}
+@media(prefers-reduced-motion:reduce){.discover *,.discover *::before,.discover *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.discover :is(.devi-art svg,.day-face,.ritual-card){transform:none!important}}

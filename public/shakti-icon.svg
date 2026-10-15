@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Background -->
+  <rect width="32" height="32" fill="#0a0a12"/>
+  <!-- Trishul simplified icon in gold -->
+  <g fill="#c8960c" stroke="none">
+    <!-- Shaft -->
+    <rect x="15" y="8" width="2" height="16" rx="1"/>
+    <!-- Left prong -->
+    <path d="M11,9 Q11,7 13,8 L15,11 L13,14 Q10,12 11,9Z"/>
+    <!-- Right prong -->
+    <path d="M21,9 Q21,7 19,8 L17,11 L19,14 Q22,12 21,9Z"/>
+    <!-- Center tip -->
+    <path d="M14,8 L16,4 L18,8Z"/>
+  </g>
+</svg>

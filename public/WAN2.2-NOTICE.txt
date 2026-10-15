@@ -1,0 +1,13 @@
+Wan2.2 generation attribution
+
+SHAKTI cinematic footage was generated locally with Wan2.2 using ComfyUI, as confirmed by the creator, and edited/exported using Clipchamp.
+
+Wan2.2: Team Wan / Wan-Video
+Source: https://github.com/Wan-Video/Wan2.2
+Official model license: Apache License 2.0
+Official model/output statement: https://github.com/Wan-Video/Wan2.2#license-agreement
+Reviewed source revision: 1ea34ff48f87168174e12956e200b1d908b1c5ff
+
+No generation model weights or ComfyUI software are redistributed with this website. The model license is not a claim that all generated images/video have exclusive copyright or that the project's original code license applies to all assets. No endorsement by Team Wan, ComfyUI, or Clipchamp is implied.
+
+SHAKTI created by Rupjyoti Talukdar (MadB0i). Original authored contributions retain their existing copyright and MIT notice. Third-party assets retain their own licenses.
