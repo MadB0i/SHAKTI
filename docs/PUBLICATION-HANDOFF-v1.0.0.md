@@ -1,18 +1,18 @@
-# v1.0.0 publication handoff
+# v1.0.0 publication procedure
 
-The recovered checkout preserves the existing remote history. Source, workflows, version 1.0.0 metadata, credits, release notes and the validated production build are prepared. Publication is already authorised once the existing footage condition is resolved. The main experience remains the complete 30-second hybrid cinematic.
+The recovered checkout preserves the existing GitHub history. SHAKTI's main experience is the complete 30-second hybrid cinematic, with The Story of Shakti at `/discover/`.
 
-## License condition resolved
+## Approval and license basis
 
-The owner confirms Wan2.2. Official model-family Apache 2.0 licensing and generated-output use statement have been verified and retained; [record](COMFYUI-MODEL-LICENSES.md). Publication approval is already recorded. No model weights, ComfyUI code or private evidence are included.
+The owner authorised normal push, an annotated v1.0.0 tag, GitHub Release and Pages deployment. The owner confirms local Wan2.2 generation through ComfyUI and editing/export through Clipchamp. Official Wan2.2 Apache 2.0 licensing and its generated-output use statement are retained in the [model-license record](COMFYUI-MODEL-LICENSES.md). Exact model variant and workflow were not retained. No model weights, ComfyUI software or private evidence are bundled.
 
-## Ready publication sequence after that condition is resolved
+## Publication and verification
 
-1. Set the footage clearance record only after verifying the selected exports, preserved provenance and owner-confirmed input rights. `publicReleaseApproved` already records the owner's instruction.
-2. `npm run check:release`, `npm run build -- --base /SHAKTI/`, existing browser checks and final media/link verification must pass.
-3. Review the staged diff and ensure the remote `main` has not moved. Commit the complete candidate normally and push `main` without force.
-4. Create annotated `v1.0.0` on that verified commit and push the tag normally. Create the GitHub Release using `docs/GITHUB-RELEASE-NOTES-v1.0.0.md` and the cleared download films; verify the remote commit and tag before publishing it.
-5. Configure GitHub Pages with Actions as its build source, dispatch `.github/workflows/pages.yml` at the approved tag, and wait for confirmed success.
-6. Verify the actual live `/SHAKTI/` cinematic, `/SHAKTI/discover/`, README GIF, credits and release-download URLs before reporting success.
+1. Run the recorded release gate, TypeScript/build checks and production browser checks. Keep the original cinematic and source files intact.
+2. Commit and push normally to the existing `main` history; never force-push.
+3. Configure GitHub Pages to use Actions. Dispatch `pages.yml`, wait for deployment success, and verify the actual cinematic and story page before adding live README links.
+4. Create and push annotated `v1.0.0` on the verified final commit. Dispatch `release.yml` with that tag to build the website archive, copy the portrait/desktop films, calculate SHA-256 checksums and publish the prepared release notes. This packages existing media on GitHub without a second local upload.
+5. Dispatch `pages.yml` at the release tag. Verify that the live deployment corresponds to that commit.
+6. Verify desktop/mobile navigation, uninterrupted 30-second playback, both video decoders, the cultural page, website credits, rendered README GIF, and the hashes of all published release downloads.
 
-No commit, push, tag, Release or deployment has yet occurred. Wan2.2 generation is owner-confirmed and its official license basis is recorded.
+The GitHub Release and Actions deployment histories are the public publication records. Local screenshots and detailed verification JSON remain in ignored evidence folders rather than the source repository.

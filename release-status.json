@@ -2,9 +2,9 @@
   "publicReleaseApproved": true,
   "footageRightsConfirmed": true,
   "footageEvidence": "docs/COMFYUI-MODEL-LICENSES.md and docs/video-generation-provenance.json \u2014 owner-confirmed local Wan2.2 generation; official Apache-2.0 license and generated-output use statement reviewed, with notices retained.",
-  "status": "Owner-authorised release proceeding after Wan2.2 license verification. Technical checks passed; public results will be recorded only after remote confirmation.",
+  "status": "Owner-authorised v1.0.0 configuration with documented Wan2.2 license basis, passing local build/browser checks and verified live Pages runtime. GitHub Releases and Actions contain the authoritative publication records.",
   "version": "1.0.0",
-  "stage": "release-verified-ready-to-publish",
+  "stage": "release-validated",
   "approvalEvidence": "Owner requested normal push, annotated v1.0.0 tag, GitHub Release and Pages deployment in this chat on 15 October 2026, conditional on distribution rights and checks. No additional design approval required.",
   "footageProvenance": {
     "credit": "AI-generated cinematic footage: Wan2.2 via local ComfyUI; edited/exported in Clipchamp",
@@ -18,5 +18,11 @@
     "modelFamily": "Wan2.2 (owner-confirmed)"
   },
   "remainingMediaInput": null,
-  "publicationHandoff": "docs/PUBLICATION-HANDOFF-v1.0.0.md"
+  "publicationHandoff": "docs/PUBLICATION-HANDOFF-v1.0.0.md",
+  "liveVerification": {
+    "url": "https://madb0i.github.io/SHAKTI/",
+    "sourceCommit": "6caedd505b4e82defb9201dc26d20a8994dcbbc0",
+    "workflowRun": "https://github.com/MadB0i/SHAKTI/actions/runs/38787705409",
+    "checks": "Desktop/mobile navigation, both clips decoded, uninterrupted 30-second cinematic, four story viewport sizes, direct route reloads, zero HTTP/console/page errors."
+  }
 }

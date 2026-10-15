@@ -1,5 +1,7 @@
 SHAKTI — The Awakening is an interactive 30-second Durga Puja film, with a cultural companion, **The Story of Shakti**.
 
+[Experience SHAKTI](https://madb0i.github.io/SHAKTI/) · [The Story of Shakti](https://madb0i.github.io/SHAKTI/discover/)
+
 - Ignite a diya and follow the real-time WebGL opening into the cinematic finale.
 - Pause, seek, replay and view in portrait or widescreen.
 - Explore `/discover/` for the sourced 2026 Bengali calendar, mythology, history and festival traditions.

@@ -1,6 +1,6 @@
 # v1.0.0 candidate validation
 
-15 October 2026. Local review only. No push, tag, upload or publication.
+15 October 2026. These results record the local candidate checks performed before publication. Live verification is performed separately against the deployed release.
 
 | Check | Result |
 | --- | --- |
@@ -32,10 +32,8 @@ The generation-model condition is resolved on owner-confirmed Wan2.2 use and its
 
 ## Evidence
 
-- [Discover desktop](../evidence/v1-preparation/browser/discover-desktop.png) · [desktop hero](../evidence/v1-preparation/browser/discover-desktop-hero.png)
-- [Discover phone](../evidence/v1-preparation/browser/discover-mobile.png) · [phone hero](../evidence/v1-preparation/browser/discover-mobile-hero.png)
-- [Film desktop landing](../evidence/v1-preparation/browser/film-desktop-landing.png) · [finale with Explore link](../evidence/v1-preparation/browser/film-desktop-finale.png)
-- [Film phone landing](../evidence/v1-preparation/browser/film-mobile-landing.png) · [phone finale](../evidence/v1-preparation/browser/film-mobile-finale.png)
-- [Browser results](../evidence/v1-preparation/browser/results.json) · [existing cinematic regressions](../evidence/v1-preparation/browser/cinematic-regressions.json)
-- [Accessibility](../evidence/v1-preparation/browser/accessibility.json) · [contrast measurements](../evidence/v1-preparation/browser/contrast.json) · [static routes](../evidence/v1-preparation/browser/static-routes.json)
-- [Preservation result](../evidence/v1-preparation/preservation-result.json) · [build asset inventory](asset-manifest.json)
+Browser screenshots, machine-readable results, accessibility measurements and preservation hashes are retained locally under the ignored `evidence/v1-preparation/` directory. They are not release assets. The public [delivery asset inventory](asset-manifest.json) records the production file hashes and attribution.
+
+## Live Pages verification
+
+16 October 2026 (Asia/Kolkata): [Pages deployment](https://github.com/MadB0i/SHAKTI/actions/runs/38787705409) succeeded for `6caedd505b4e82defb9201dc26d20a8994dcbbc0`. Chromium checked the actual public site at 1440, 768, 390 and 320 pixel widths. Calendar selection, URL/reload persistence, disclosures, visible keyboard focus and navigation passed. Desktop and mobile IGNITE, WebGL scenes, both delivered video decoders, the post-film Explore link and return navigation passed. Uninterrupted 30-second hybrid playback completed with no corrupted video frames, HTTP errors, console errors or uncaught page errors. Direct `/discover` loading and reduced-motion behaviour also passed. Final README/release-workflow documentation changes preserve this runtime unchanged.

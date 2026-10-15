@@ -1,6 +1,6 @@
-# Git recovery and distribution review
+# Historical Git recovery and distribution review
 
-Reviewed 15 October 2026. Owner-authorised publication proceeds after verified official Wan2.2 license review. This file retains the local recovery and pre-publication test record.
+Recovery snapshot: 15 October 2026, before the first publication. This file retains the initial repository state and local test record. Current public publication records are the [GitHub Releases](https://github.com/MadB0i/SHAKTI/releases) and [Pages workflow runs](https://github.com/MadB0i/SHAKTI/actions/workflows/pages.yml). Wan2.2 licensing was subsequently verified as recorded below.
 
 ## Repository recovery
 
@@ -26,6 +26,6 @@ Owner-confirmed **Wan2.2 via local ComfyUI**, edited/exported with Clipchamp. Th
 - The package audit reports one high Vite and one moderate esbuild development-tool advisory. These tools are not served by static GitHub Pages. No forced dependency upgrade was performed; development-tool upgrades remain a separate maintenance item.
 - No obvious credential values or credential files were found in the allowlisted release content. Build/evidence/cache paths are ignored and will not enter the proposed commit.
 
-## Actual public state
+## Initial public state (before release)
 
-The remote still points at the baseline above. There is no v1.0.0 tag or Release. GitHub's Pages configuration API returned 404, and https://madb0i.github.io/SHAKTI/ returned HTTP 404. No successful release or live website is claimed. The prepared cinematic remains the intended main experience; no static substitute was introduced.
+At the initial recovery inspection, the remote pointed at the baseline above and there was no v1.0.0 tag or Release. GitHub's Pages configuration API returned 404, and https://madb0i.github.io/SHAKTI/ returned HTTP 404. These were pre-publication results, not the eventual release status. The prepared cinematic remains the intended main experience; no static substitute was introduced.

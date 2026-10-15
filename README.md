@@ -1,7 +1,7 @@
 <h1 align="center">SHAKTI — The Awakening</h1>
 <p align="center"><em>One flame. A thousand lights. The awakening of Shakti.</em></p>
 <p align="center"><a href="docs/media/shakti-cinematic.mp4"><img src="docs/media/shakti-preview.gif" width="270" height="480" alt="A golden diya ignites and its light becomes a Trishul." /></a></p>
-<!-- LIVE_LINKS -->
+<p align="center"><a href="https://madb0i.github.io/SHAKTI/"><strong>Ignite SHAKTI · Live experience</strong></a> · <a href="https://madb0i.github.io/SHAKTI/discover/">The Story of Shakti</a></p>
 <p align="center"><a href="docs/media/shakti-cinematic.mp4"><strong>Watch the full cinematic · 30 seconds</strong></a> · <a href="https://github.com/MadB0i/SHAKTI/releases">Releases & downloads</a></p>
 <p align="center">Created by <strong>Rupjyoti Talukdar (MadB0i)</strong><br/>শুভ দুর্গাপূজা · Happy Durga Puja</p>
 
