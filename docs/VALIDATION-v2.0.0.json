@@ -1,0 +1,309 @@
+{
+  "local_technical_checks_passed": true,
+  "media": {
+    "duration_seconds": 30,
+    "frames": 900,
+    "owner_movie_sha256": "d4b11d61c774f820e17a3fee31ea9ad1e3dc769850c11744ace672f8ef5b6e28",
+    "owner_movie_unchanged": true,
+    "audio_packet_hash": "SHA256=a4eb1195bf30a56c4d2d3497fac77a62dbb154bfe439aab1b6dba026a71f607b",
+    "movie_runtime_watch_audio_packets_identical": true,
+    "decoded_audio_identical": true,
+    "measured_sync_offset_samples": 0,
+    "sample_peak": 0.45754823088645935,
+    "clipped_samples": 0,
+    "loudness_lufs": -21.29,
+    "true_peak_dbTP": -6.66,
+    "loudness_altered": false,
+    "full_decode_errors": 0,
+    "runtime_audio_files": [
+      "shakti-original.m4a"
+    ]
+  },
+  "browser_audio": {
+    "errors": [],
+    "http_errors": [],
+    "checks": [
+      "desktop: normal full playback, one audio buffer at a time, no resonance output, muted video clips, forward/backward seeks, actual-output mute/unmute, pause silence and replay passed",
+      "mobile: normal full playback, one audio buffer at a time, no resonance output, muted video clips, forward/backward seeks, actual-output mute/unmute, pause silence and replay passed"
+    ],
+    "full_playback": {
+      "desktop": {
+        "wall_seconds": 30.39000000001397,
+        "samples": [
+          {
+            "film_time": 1,
+            "audio_offset": 1,
+            "drift": 0,
+            "peak": 0.09184883534908295
+          },
+          {
+            "film_time": 4,
+            "audio_offset": 4,
+            "drift": 0,
+            "peak": 0.13666017353534698
+          },
+          {
+            "film_time": 8,
+            "audio_offset": 8,
+            "drift": 0,
+            "peak": 0.18809950351715088
+          },
+          {
+            "film_time": 12,
+            "audio_offset": 12,
+            "drift": 0,
+            "peak": 0.09926959872245789
+          },
+          {
+            "film_time": 15.8,
+            "audio_offset": 15.8,
+            "drift": 0.0,
+            "peak": 0.10440070927143097
+          },
+          {
+            "film_time": 16.108986,
+            "audio_offset": 16.141333333333332,
+            "drift": 0.0323473333333304,
+            "peak": 0.11701495945453644
+          },
+          {
+            "film_time": 17.705371000000003,
+            "audio_offset": 17.76,
+            "drift": 0.054628999999998484,
+            "peak": 0.17092692852020264
+          },
+          {
+            "film_time": 20.003876,
+            "audio_offset": 20.061333333333334,
+            "drift": 0.05745733333333192,
+            "peak": 0.3233857750892639
+          },
+          {
+            "film_time": 24.010274000000003,
+            "audio_offset": 24.061333333333334,
+            "drift": 0.051059333333331125,
+            "peak": 0.13425074517726898
+          },
+          {
+            "film_time": 27.003748,
+            "audio_offset": 27.061333333333334,
+            "drift": 0.057585333333332045,
+            "peak": 0.35891780257225037
+          },
+          {
+            "film_time": 29.704000000000153,
+            "audio_offset": 29.76,
+            "drift": 0.05599999999984817,
+            "peak": 0.24117624759674072
+          },
+          {
+            "film_time": 30,
+            "audio_offset": null,
+            "drift": null,
+            "peak": 0
+          }
+        ],
+        "audio_audit": {
+          "starts": [
+            {
+              "at": 0,
+              "offset": 0,
+              "duration": 30
+            }
+          ],
+          "stops": [
+            30.04
+          ],
+          "maxActive": 1,
+          "videoPlays": [
+            {
+              "muted": true,
+              "volume": 0
+            },
+            {
+              "muted": true,
+              "volume": 0
+            }
+          ]
+        },
+        "video_quality": [
+          {
+            "totalVideoFrames": 52,
+            "droppedVideoFrames": 0,
+            "corruptedVideoFrames": 0
+          },
+          {
+            "totalVideoFrames": 304,
+            "droppedVideoFrames": 0,
+            "corruptedVideoFrames": 0
+          }
+        ],
+        "time": 30,
+        "decoded_buffer_duration": 30,
+        "browser_source_first_2s_correlation": 1.0,
+        "AAC_rounding_note": "Browser decoder reports one sample less than 30 seconds; film clock and MP4/M4A metadata remain exactly 30 seconds. Opening PCM correlation verifies no inserted start delay."
+      },
+      "mobile": {
+        "wall_seconds": 30.06299999996554,
+        "samples": [
+          {
+            "film_time": 1,
+            "audio_offset": 1,
+            "drift": 0,
+            "peak": 0.09184883534908295
+          },
+          {
+            "film_time": 4,
+            "audio_offset": 4,
+            "drift": 0,
+            "peak": 0.13666017353534698
+          },
+          {
+            "film_time": 8.021333333333335,
+            "audio_offset": 8.021333333333335,
+            "drift": 0.0,
+            "peak": 0.1993570327758789
+          },
+          {
+            "film_time": 12,
+            "audio_offset": 12,
+            "drift": 0,
+            "peak": 0.09216539561748505
+          },
+          {
+            "film_time": 15.8,
+            "audio_offset": 15.8,
+            "drift": 0.0,
+            "peak": 0.09564226865768433
+          },
+          {
+            "film_time": 16.106249,
+            "audio_offset": 16.12,
+            "drift": 0.013751000000002733,
+            "peak": 0.11701495945453644
+          },
+          {
+            "film_time": 17.700037000000002,
+            "audio_offset": 17.741333333333333,
+            "drift": 0.0412963333333316,
+            "peak": 0.1721707284450531
+          },
+          {
+            "film_time": 20.005251,
+            "audio_offset": 20.04,
+            "drift": 0.03474899999999792,
+            "peak": 0.3233857750892639
+          },
+          {
+            "film_time": 24.012067000000002,
+            "audio_offset": 24.061333333333334,
+            "drift": 0.04926633333333186,
+            "peak": 0.13425074517726898
+          },
+          {
+            "film_time": 27.0055,
+            "audio_offset": 27.04,
+            "drift": 0.034499999999997755,
+            "peak": 0.35891780257225037
+          },
+          {
+            "film_time": 29.704100000000178,
+            "audio_offset": 29.741333333333333,
+            "drift": 0.03723333333315537,
+            "peak": 0.28131407499313354
+          },
+          {
+            "film_time": 30,
+            "audio_offset": null,
+            "drift": null,
+            "peak": 0
+          }
+        ],
+        "audio_audit": {
+          "starts": [
+            {
+              "at": 0.04,
+              "offset": 0,
+              "duration": 30
+            }
+          ],
+          "stops": [
+            30.08
+          ],
+          "maxActive": 1,
+          "videoPlays": [
+            {
+              "muted": true,
+              "volume": 0
+            },
+            {
+              "muted": true,
+              "volume": 0
+            }
+          ]
+        },
+        "video_quality": [
+          {
+            "totalVideoFrames": 52,
+            "droppedVideoFrames": 0,
+            "corruptedVideoFrames": 0
+          },
+          {
+            "totalVideoFrames": 304,
+            "droppedVideoFrames": 0,
+            "corruptedVideoFrames": 0
+          }
+        ],
+        "time": 30,
+        "decoded_buffer_duration": 30,
+        "browser_source_first_2s_correlation": 1.0,
+        "AAC_rounding_note": "Browser decoder reports one sample less than 30 seconds; film clock and MP4/M4A metadata remain exactly 30 seconds. Opening PCM correlation verifies no inserted start delay."
+      }
+    },
+    "owner_movie_playback": {
+      "duration": 30,
+      "time": 30,
+      "width": 1080,
+      "height": 1920,
+      "rate": 1,
+      "muted": false,
+      "error": null,
+      "quality": {
+        "total": 905,
+        "dropped": 0,
+        "corrupted": 0
+      },
+      "wall_seconds": 30.07799999997951
+    },
+    "passed": true
+  },
+  "controls_checks": [
+    "desktop: hold pause/resume, fullscreen, native share payload and denied-clipboard copy fallback passed",
+    "desktop: native IGNITE, keyboard/touch, double-click, diya picking, HUD focus restore, WebGL/video pause/resume, bidirectional/racing seeks, mute gain, hidden-tab pause, replay and framing passed",
+    "mobile: hold pause/resume, fullscreen, native share payload and denied-clipboard copy fallback passed",
+    "mobile: native IGNITE, keyboard/touch, double-click, diya picking, HUD focus restore, WebGL/video pause/resume, bidirectional/racing seeks, mute gain, hidden-tab pause, replay and framing passed",
+    "Reduced motion: static WebGL camera and explicit video consent at 16s",
+    "HTTP 503: readable recovery and disabled ignition",
+    "damaged video: readable recovery and disabled ignition",
+    "Delayed video: stable minimal landing, disabled IGNITE, recovery when delivered",
+    "Installed Edge: uninterrupted full 1x playback completed"
+  ],
+  "discover_checks": [
+    "desktop: calendar selection/URL/reload/arrows, disclosures, native anchor/back, visible focus, no overflow; no film/WebGL downloads",
+    "mobile: calendar selection/URL/reload/arrows, disclosures, native anchor/back, visible focus, no overflow; no film/WebGL downloads",
+    "small-mobile: calendar selection/URL/reload/arrows, disclosures, native anchor/back, visible focus, no overflow; no film/WebGL downloads",
+    "tablet: calendar selection/URL/reload/arrows, disclosures, native anchor/back, visible focus, no overflow; no film/WebGL downloads",
+    "desktop: IGNITE, WebGL seek, both clips decode, 30s finale, post-film Explore link, return to film, quiet story navigation",
+    "mobile: IGNITE, WebGL seek, both clips decode, 30s finale, post-film Explore link, return to film, quiet story navigation",
+    "Uninterrupted real 30-second hybrid playback reaches completion; both videos decoded without corrupted frames",
+    "Direct /discover without trailing slash works; reduced motion disables illustration tilt"
+  ],
+  "protected_visual_and_cultural_files_unchanged": 23,
+  "visual_choreography_clock_binding_only": true,
+  "runtime_asset_http_checks": 29,
+  "runtime_cache_revision_verified": "455e669321ee",
+  "published": false,
+  "publication_authorized": true,
+  "publication_basis": "Owner personally reviewed actual uploader attribution-conditioned terms and approved final publication; scope interpretation is recorded in AUDIO-PROVENANCE-v2.0.0.md.",
+  "record_stage": "Pre-publication technical evidence; remote publication verified separately through Actions/release records."
+}

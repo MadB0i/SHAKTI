@@ -1,3 +1,5 @@
+> Historical v1 provenance review. The v2 owner-final soundtrack and publication permission record are documented separately in [audio provenance](AUDIO-PROVENANCE-v2.0.0.md).
+
 # Current footage provenance
 
 Owner-confirmed generation: **Wan2.2 using local ComfyUI**. Editing/export: **Clipchamp**, also recorded in the supplied MP4 metadata. This supersedes prior incorrect service attribution.

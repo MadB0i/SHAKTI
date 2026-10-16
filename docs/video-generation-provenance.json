@@ -34,7 +34,7 @@
   "software_license_reference": "https://raw.githubusercontent.com/Comfy-Org/ComfyUI/master/LICENSE",
   "software_license_scope": "GPLv3 software license; not blanket permission for every model/checkpoint or its generated outputs. ComfyUI and model weights are not bundled in this website.",
   "inputs": "Owner reports own SHAKTI WebGL scenes and project-specific ChatGPT-generated artwork.",
-  "audio": "Source embedded audio excluded from delivery; independently synthesized original score used.",
+  "audio": "Original generation-clip audio remains muted. Historical v1 used independently synthesized audio; the v2 owner-final Clipchamp soundtrack is preserved unchanged. See docs/AUDIO-PROVENANCE-v2.0.0.md for actual track identification and permission scope.",
   "distribution_clearance_confirmed": true,
   "model_family": "Wan2.2",
   "model_identity_basis": "Owner explicitly confirmed Wan2.2 in this chat, 15 October 2026",

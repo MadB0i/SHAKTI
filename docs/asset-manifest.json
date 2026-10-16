@@ -1,8 +1,8 @@
 {
-  "version": "1.0.0",
-  "release": "v1.0.0 — owner-authorised; documented license basis verified",
+  "version": "2.0.0",
+  "release": "v2.0.0 — owner-authorized; music attribution and actual terms retained",
   "base": "/SHAKTI/",
-  "total_bytes": 25986726,
+  "total_bytes": 25695612,
   "files": [
     {
       "file": "DEPENDENCY-LICENSES.txt",
@@ -53,9 +53,9 @@
       "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
     },
     {
-      "file": "assets/App-Co2WomH5.js",
-      "bytes": 769159,
-      "sha256": "34565a6e6f48a040b11499c48cbcde69625140d6436d8eaaba4550ea6d194d3e",
+      "file": "assets/App-NN-2OvqG.js",
+      "bytes": 769757,
+      "sha256": "d20d7723ff401b3040b2f9a882fef025f13441544f9393848ee170a33572328a",
       "origin_terms": "Original authored contributions plus bundled dependencies; see DEPENDENCY-LICENSES.txt (GSAP separate proprietary license)"
     },
     {
@@ -65,9 +65,9 @@
       "origin_terms": "Cinzel / Noto Serif Bengali: SIL OFL 1.1; retained font notices"
     },
     {
-      "file": "assets/Discover-CSzE7dTT.js",
+      "file": "assets/Discover-C8ORFKEn.js",
       "bytes": 24711,
-      "sha256": "e1df62fcb342b5526594a9b907a14c9e31371230b29101b16a3a6e9420ad0d4f",
+      "sha256": "806c41a9381de35a9be3562c3175f863465484989af047f3e09757a2ea755539",
       "origin_terms": "Original authored contributions plus bundled dependencies; see DEPENDENCY-LICENSES.txt (GSAP separate proprietary license)"
     },
     {
@@ -83,33 +83,33 @@
       "origin_terms": "Cinzel / Noto Serif Bengali: SIL OFL 1.1; retained font notices"
     },
     {
-      "file": "assets/index-CIagffY-.js",
-      "bytes": 144106,
-      "sha256": "c7dcf9039e617cc2b9aee2433c235a181064ebbad5d527129faa989551f45774",
-      "origin_terms": "Original authored contributions plus bundled dependencies; see DEPENDENCY-LICENSES.txt (GSAP separate proprietary license)"
-    },
-    {
       "file": "assets/index-DVg_ShJP.css",
       "bytes": 11498,
       "sha256": "6a7f61e91674b5fdbe8f6ea10a7861023fe1ffec631356c51a2e68dcdf787763",
       "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
     },
     {
+      "file": "assets/index-il6vMn4y.js",
+      "bytes": 144106,
+      "sha256": "1ff8b729a6e48690c16abfcb0151015a86473c77ba3295972b15ab9af8a20785",
+      "origin_terms": "Original authored contributions plus bundled dependencies; see DEPENDENCY-LICENSES.txt (GSAP separate proprietary license)"
+    },
+    {
       "file": "audio/shakti-original.m4a",
-      "bytes": 737390,
-      "sha256": "f5db223bb3369e4d6816e23cfa98f469b8363b8ec1cb917a1ba1d39ec47ae1cb",
-      "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
+      "bytes": 728480,
+      "sha256": "455e669321ee7e72e0d8f50a2e957ec8fc78fb9320ba1a4aa0504b375ceb151d",
+      "origin_terms": "Owner-final MP4 audio stream copy; Mrinal Sharma / No Copyright Indian Music; attribution-conditioned free-use statement and owner-reviewed scope basis, see AUDIO-PROVENANCE-v2.0.0.md"
     },
     {
       "file": "credits.html",
-      "bytes": 2118,
-      "sha256": "ccd4d36ee7469b55012e91ea6dc301178724195d689bffccd5f5249c7a06abb6",
+      "bytes": 2884,
+      "sha256": "38d8af7d881e52111310b8c6bc7336a86b38cc429ef8fcf1b956fbfc840bb13a",
       "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
     },
     {
       "file": "discover/index.html",
       "bytes": 1240,
-      "sha256": "e44ac7746053fa65769c8f6e12218ebe36e012f12ebe3d0d9e3f51c6743e8548",
+      "sha256": "85b8bd58a9e76935fd4b5262e41d2c40f8570ba5b9784a7bec2b14e399aed291",
       "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
     },
     {
@@ -133,7 +133,7 @@
     {
       "file": "index.html",
       "bytes": 1211,
-      "sha256": "74ab1827756f278048e2e489a31ff8fdba646bfd6d8174c84520ac2450254f99",
+      "sha256": "b6d33cfef0fc881a3e67ee426475d1e720a05b4c84df78e1aa7f21f780c5f0f1",
       "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
     },
     {
@@ -144,9 +144,9 @@
     },
     {
       "file": "media/shakti-film.mp4",
-      "bytes": 4452240,
-      "sha256": "33dbb48ea9212f2f009621a2ebc08e3635e516af5c5dfea7cddd286dae04e360",
-      "origin_terms": "Owner-confirmed local Wan2.2 via ComfyUI; Clipchamp edit/export; official Apache-2.0 model license and generated-output use statement reviewed"
+      "bytes": 4168672,
+      "sha256": "407b07df1211a9b228e351904182b8c3f1959a3e6edf028b5d3e5c1f560ac992",
+      "origin_terms": "Owner-final film: documented Wan2.2 footage, separately credited Trishul/fonts and attribution-conditioned festival music; see CREDITS.md and AUDIO-PROVENANCE-v2.0.0.md"
     },
     {
       "file": "posters/finale.jpg",

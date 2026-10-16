@@ -3,9 +3,10 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: Existing annotated release tag
+        description: Existing annotated tag matching package.json
         required: true
-        default: v1.0.0
+        type: string
+        default: v2.0.0
 permissions:
   contents: read
 concurrency:
@@ -21,43 +22,63 @@ jobs:
         with:
           ref: ${{ inputs.tag }}
           fetch-depth: 0
-      - name: Verify annotated tag and release approval
-        env:
-          RELEASE_TAG: ${{ inputs.tag }}
-        run: |
-          test "$RELEASE_TAG" = v1.0.0
-          test "$(git cat-file -t "$RELEASE_TAG")" = tag
-          test "$(git rev-parse HEAD)" = "$(git rev-parse "$RELEASE_TAG^{}")"
-          node scripts/check-release.mjs
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: npm
+      - name: Verify annotated tag, package version and release gate
+        env:
+          RELEASE_TAG: ${{ inputs.tag }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [[ "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]
+          test "$RELEASE_TAG" = "v$(node -p "JSON.parse(require('fs').readFileSync('package.json','utf8')).version")"
+          test "$(git cat-file -t "$RELEASE_TAG")" = tag
+          test "$(git rev-parse HEAD)" = "$(git rev-parse "$RELEASE_TAG^{}")"
+          test -f "docs/GITHUB-RELEASE-NOTES-${RELEASE_TAG}.md"
+          if gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "Release already exists; refusing to overwrite it."
+            exit 1
+          fi
+          node scripts/check-release.mjs
       - run: npm ci
       - run: npm run build -- --base /SHAKTI/
-      - name: Package website, films and checksums
+      - name: Package one final film, website, credits and checksums
+        env:
+          RELEASE_TAG: ${{ inputs.tag }}
         run: |
           mkdir release-downloads
-          cp launch-assets/video/SHAKTI-Reel-1080x1920.mp4 release-downloads/
-          cp launch-assets/video/SHAKTI-Desktop-1440x810.mp4 release-downloads/
+          cp docs/media/shakti-cinematic.mp4 "release-downloads/SHAKTI-${RELEASE_TAG}-Full-HD.mp4"
+          cp docs/CREDITS.md release-downloads/CREDITS.md
+          cp docs/AUDIO-PROVENANCE-v2.0.0.md release-downloads/AUDIO-CREDITS.md
           python - <<'PY'
           from pathlib import Path
           from zipfile import ZipFile, ZIP_DEFLATED
-          import hashlib
+          import hashlib, os, re, posixpath
           output = Path('release-downloads')
-          with ZipFile(output/'SHAKTI-v1.0.0-website.zip', 'w', ZIP_DEFLATED) as archive:
+          tag = os.environ['RELEASE_TAG']
+          repo = os.environ['GITHUB_REPOSITORY']
+          for name in ['CREDITS.md', 'AUDIO-CREDITS.md']:
+              path = output/name
+              def absolute_credit_link(match):
+                  url = match[1]
+                  if re.match(r'^(https?:|#|D:|C:)', url, re.I):
+                      return match[0]
+                  return f'](https://github.com/{repo}/blob/{tag}/' + posixpath.normpath('docs/'+url) + ')'
+              path.write_text(re.sub(r'\]\(([^)]+)\)', absolute_credit_link, path.read_text()))
+          with ZipFile(output/f'SHAKTI-{tag}-website.zip', 'w', ZIP_DEFLATED) as archive:
               for path in sorted(Path('dist').rglob('*')):
                   if path.is_file():
                       archive.write(path, path.relative_to('dist').as_posix())
           assets = sorted(output.iterdir())
           (output/'SHA256SUMS.txt').write_text(''.join(f'{hashlib.sha256(p.read_bytes()).hexdigest()}  {p.name}\n' for p in assets))
           PY
-      - name: Publish professional GitHub Release
+      - name: Publish a new release without modifying existing releases
         env:
           GH_TOKEN: ${{ github.token }}
           RELEASE_TAG: ${{ inputs.tag }}
         run: |
           gh release create "$RELEASE_TAG" release-downloads/* \
             --repo "$GITHUB_REPOSITORY" --verify-tag \
-            --title "SHAKTI v1.0.0 — The Awakening" \
-            --notes-file docs/GITHUB-RELEASE-NOTES-v1.0.0.md
+            --title "SHAKTI ${RELEASE_TAG} — One flame. A thousand lights." \
+            --notes-file "docs/GITHUB-RELEASE-NOTES-${RELEASE_TAG}.md"

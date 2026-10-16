@@ -1,3 +1,5 @@
+> Historical v1.0.0 report. Its exports are archived outside Git; [published v1 release](https://github.com/MadB0i/SHAKTI/releases/tag/v1.0.0) remains unchanged. For current preparation see [v2 validation](../docs/VALIDATION-v2.0.0.md).
+
 # SHAKTI — Final production report
 
 15 October 2026 · Created by Rupjyoti Talukdar (MadB0i)
@@ -30,10 +32,10 @@ These are disclosed artistic limitations, not a proposal for another redesign cy
 
 [Complete launch kit and specifications](README.md) · [Local review player](review.html)
 
-- [1080×1920 Reel, 30.000 seconds](video/SHAKTI-Reel-1080x1920.mp4)
-- [1440×810 desktop film, 30.000 seconds](video/SHAKTI-Desktop-1440x810.mp4)
-- [8.5-second vertical teaser](video/SHAKTI-Teaser-8.5s.mp4) and [small X clip](video/SHAKTI-X-Teaser.mp4)
-- [Vertical cover](covers/SHAKTI-Reel-Cover-1080x1920.jpg), [GitHub/LinkedIn cover](covers/SHAKTI-GitHub-LinkedIn-1200x630.jpg), [social captions](social/CAPTIONS.md)
+- [1080×1920 Reel, 30.000 seconds](https://github.com/MadB0i/SHAKTI/blob/v1.0.0/launch-assets/video/SHAKTI-Reel-1080x1920.mp4)
+- [1440×810 desktop film, 30.000 seconds](https://github.com/MadB0i/SHAKTI/blob/v1.0.0/launch-assets/video/SHAKTI-Desktop-1440x810.mp4)
+- [8.5-second vertical teaser](https://github.com/MadB0i/SHAKTI/blob/v1.0.0/launch-assets/video/SHAKTI-Teaser-8.5s.mp4) and [small X clip](https://github.com/MadB0i/SHAKTI/blob/v1.0.0/launch-assets/video/SHAKTI-X-Teaser.mp4)
+- [Vertical cover](https://github.com/MadB0i/SHAKTI/blob/v1.0.0/launch-assets/covers/SHAKTI-Reel-Cover-1080x1920.jpg), [GitHub/LinkedIn cover](https://github.com/MadB0i/SHAKTI/blob/v1.0.0/launch-assets/covers/SHAKTI-GitHub-LinkedIn-1200x630.jpg), [social captions](https://github.com/MadB0i/SHAKTI/blob/v1.0.0/launch-assets/social/CAPTIONS.md)
 
 Original browser recordings are retained in `evidence/launch/after/desktop-complete.webm` and `portrait-complete.webm`. That private evidence directory is excluded from the website and source-control staging.
 

@@ -10,3 +10,10 @@ public/videos/divine-finale.mp4
 public/art/references/
 public/art/durga-lion.png
 public/art/durga-reveal.png
+
+# Personal exports and local release preparation
+launch-assets/social/
+launch-assets/video/
+launch-assets/covers/
+release-downloads/
+*.wav

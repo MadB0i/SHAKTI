@@ -8,7 +8,7 @@ export class Resonance {
  private envelope=0
  private capture?:MediaStreamAudioDestinationNode
  unlock(){
-  if(this.disposed)return
+  if(this.disposed||!this.enabled)return
   try{
    if(!this.context){
     this.context=new AudioContext();this.gain=this.context.createGain();this.gain.gain.value=0

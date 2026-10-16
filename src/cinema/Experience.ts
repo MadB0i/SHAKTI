@@ -47,6 +47,7 @@ export class Experience {
  private raf=0
  private last=0
  private elapsed=-1
+ private playbackClock?:()=>number|undefined
  private playing=false
  private portrait=false
  private reduced=matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -273,6 +274,7 @@ export class Experience {
  replay(){if(!this.heroLoaded)return;this.resonance.unlock();this.elapsed=0;this.playing=true;this.frames=[];this.transitionFrames=[];this.gatewayFrames=[];this.last=performance.now();this.timeline.time(0);this.notify()}
  toggle(){if(this.elapsed<0)return this.ignite();if(this.elapsed>=DURATION)return this.replay();this.playing=!this.playing;if(this.playing)this.resonance.unlock();this.last=performance.now();this.notify()}
  setSound(enabled:boolean){this.resonance.setEnabled(enabled)}
+ setPlaybackClock(clock:()=>number|undefined){this.playbackClock=clock}
  setSuspended(value:boolean){this.suspended=value;this.last=performance.now()}
  get canvas(){return this.renderer.domElement}
  get audioStream(){return this.resonance.stream}
@@ -282,7 +284,7 @@ export class Experience {
   if(this.disposed)return
   const dt=Math.min((now-this.last)/1000,.5);this.last=now
    if(!document.hidden&&!this.suspended){
-   if(this.playing){this.elapsed=Math.min(DURATION,this.elapsed+dt);if(this.elapsed>=DURATION)this.playing=false;const phase=phaseAt(this.elapsed);if(phase!==this.lastPhase)this.notify()}
+   if(this.playing){this.elapsed=Math.min(DURATION,this.playbackClock?.()??this.elapsed+dt);if(this.elapsed>=DURATION)this.playing=false;const phase=phaseAt(this.elapsed);if(phase!==this.lastPhase)this.notify()}
    const clock=this.elapsed<=7?now:this.elapsed*1000
    this.uniforms.uTime.value=this.elapsed;this.uniforms.uClock.value=clock/1000
    this.timeline.time(Math.max(0,this.elapsed))

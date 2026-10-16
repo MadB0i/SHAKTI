@@ -1,0 +1,88 @@
+{
+  "project_title": "SHAKTI - The Awakening",
+  "source_filename": "DURGA PUJA SPECIAL _ SHORT _ no copyright music [FFFP17kK5EI].mp3",
+  "source_url": "https://www.youtube.com/watch?v=FFFP17kK5EI",
+  "source_metadata_artist": "No Copyright Indian Music",
+  "cached_source_sha256": "9893d17afc0cefe3a593505b39c2bba935b06ca3f47e383955aa6ee6ff64882b",
+  "clipchamp_internal_original_hash": "e3289edfe53d20484377476b9281be2d842fa90ec2b7fda20c54e9c119785226",
+  "hash_note": "Clipchamp internal file hash is recorded separately; do not assume its algorithm equals whole-file SHA-256. Cached source metadata/length and waveform matches identify the file.",
+  "matches": [
+    {
+      "film_second": 0,
+      "source_match": {
+        "at": 7.339625,
+        "correlation": -0.10174919672403981
+      }
+    },
+    {
+      "film_second": 4,
+      "source_match": {
+        "at": 19.7250625,
+        "correlation": -0.19499381086269296
+      }
+    },
+    {
+      "film_second": 8,
+      "source_match": {
+        "at": 3.2456875,
+        "correlation": 0.9967214929908267
+      }
+    },
+    {
+      "film_second": 12,
+      "source_match": {
+        "at": 7.2456875,
+        "correlation": 0.9954668405603152
+      }
+    },
+    {
+      "film_second": 16,
+      "source_match": {
+        "at": 11.2456875,
+        "correlation": 0.9969983914794329
+      }
+    },
+    {
+      "film_second": 20,
+      "source_match": {
+        "at": 15.2456875,
+        "correlation": 0.9833194848462472
+      }
+    },
+    {
+      "film_second": 24,
+      "source_match": {
+        "at": 19.2456875,
+        "correlation": 0.979753703211653
+      }
+    },
+    {
+      "film_second": 28,
+      "source_match": {
+        "at": 23.2456875,
+        "correlation": 0.9859364813913294
+      }
+    }
+  ],
+  "license": "Uploader attribution-conditioned free-use statement; description names YouTube/Instagram/Facebook. Owner personally reviewed terms and authorized SHAKTI publication. No CC/public-domain license asserted.",
+  "excluded_attributions": "The pbimal/Devraj Paudyal and Aditya Pawar CC0/CC BY-SA audition sources are not established as ingredients of this final edit.",
+  "artist_credit_from_description": "Mrinal Sharma",
+  "public_permission_record": {
+    "retrieved": "2026-10-16",
+    "page_sha256": "22c8c60ab2a791242e86acfc3dffc24732e3bb0708d85ab45b5ec15d038a16a4",
+    "channel_url": "https://www.youtube.com/channel/UCjue9lKxr0ospBDgwgbwPBA",
+    "permitted_platforms": [
+      "YouTube",
+      "Instagram",
+      "Facebook"
+    ],
+    "condition": "Credit the channel with its channel link",
+    "channel_about_description": "Empty",
+    "scope_interpretation": "Named platforms are not stated to be exclusive. General attribution-conditioned free use is applied to SHAKTI film-related GitHub/Pages distribution on the owner-reviewed basis; GitHub/Pages are not expressly named and no separate uploader grant is claimed."
+  },
+  "owner_publication_approval": {
+    "date": "2026-10-16",
+    "instruction": "Owner personally reviewed the festival music usage information, approved final edited MP4, and requested normal main push, new annotated v2.0.0 tag, release and Pages deployment if terms cover use; flag only actual prohibiting restrictions.",
+    "soundtrack_changes_authorized": false
+  }
+}

@@ -9,7 +9,7 @@ Reviewed 15 October 2026. The owner identifies both cinematic clips as **Wan2.2*
 - [License text](licenses/Wan2.2-Apache-2.0.txt) retained verbatim from official source revision `1ea34ff48f87168174e12956e200b1d908b1c5ff`. SHA-256: `c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4`.
 - Exact checkpoint variant/hash and workflow were not retained. The record relies on the owner's explicit Wan2.2 identification, not a claimed forensic match. No additional model, fine-tune or LoRA is invented.
 - ComfyUI's GPLv3 software license is separate from Wan2.2 licensing. Neither ComfyUI software nor model weights are distributed with SHAKTI. This record concerns generated footage publication, not model-weight redistribution.
-- Input artwork and WebGL scenes are owner-confirmed project materials. Source embedded audio is excluded; an independently synthesized score is used. Generated output is not asserted to have exclusive copyright or blanket MIT licensing.
+- Input artwork and WebGL scenes are owner-confirmed project materials. Original generation-clip audio is excluded. v1 used an independently synthesized score; v2 preserves the owner-final Clipchamp MP4 soundtrack, whose actual sources and owner-reviewed permission interpretation are recorded in [audio provenance](AUDIO-PROVENANCE-v2.0.0.md). Generated output is not asserted to have exclusive copyright or blanket MIT licensing.
 
 ## Release decision
 

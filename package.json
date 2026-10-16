@@ -1,7 +1,7 @@
 {
   "name": "shakti-flame-study",
   "private": true,
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
@@ -10,7 +10,8 @@
     "preview": "vite preview --host 127.0.0.1",
     "test": "python tests/launch_regressions.py",
     "check:release": "node scripts/check-release.mjs",
-    "test:discover": "python tests/discover_release.py"
+    "test:discover": "python tests/discover_release.py",
+    "test:audio": "python tests/v2_release.py"
   },
   "dependencies": {
     "gsap": "3.15.0",

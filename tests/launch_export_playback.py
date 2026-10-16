@@ -1,3 +1,7 @@
+# Historical personal-export test; current release playback is tests/v2_release.py.
+import os
+if not os.environ.get('SHAKTI_LEGACY_MASTERS'):
+ raise SystemExit('Legacy exports archived: set SHAKTI_LEGACY_MASTERS to the external backup to test them.')
 from pathlib import Path
 import json,time
 from playwright.sync_api import sync_playwright
@@ -5,7 +9,7 @@ root=Path(__file__).resolve().parents[1];out=root/'evidence/launch';report={}
 out.mkdir(parents=True,exist_ok=True)
 with sync_playwright() as p:
  b=p.chromium.launch(headless=True,args=['--use-angle=d3d11','--enable-gpu','--disable-software-rasterizer'])
- pg=b.new_page(viewport={'width':1440,'height':1000});pg.goto((root/'launch-assets/review.html').as_uri());pg.wait_for_load_state('networkidle')
+ pg=b.new_page(viewport={'width':1440,'height':1000});pg.goto((Path(os.environ['SHAKTI_LEGACY_MASTERS'])/'launch-assets/review.html').as_uri());pg.wait_for_load_state('networkidle')
  for name in ['portrait','desktop']:
   pg.get_by_role('button',name='Play final '+name).click();start=time.monotonic()
   # Normal 1x playback of the delivered MP4, independently of the app renderer.

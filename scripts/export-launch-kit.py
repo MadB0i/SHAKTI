@@ -1,3 +1,5 @@
+# Historical v1 source, retained for provenance. Superseded by the owner-approved v2 MP4.
+raise SystemExit("Retired v1 exporter: preserve docs/media/shakti-cinematic.mp4. See docs/DEVELOPMENT.md.")
 from pathlib import Path
 import subprocess,json
 import numpy as np

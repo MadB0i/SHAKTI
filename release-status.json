@@ -2,10 +2,10 @@
   "publicReleaseApproved": true,
   "footageRightsConfirmed": true,
   "footageEvidence": "docs/COMFYUI-MODEL-LICENSES.md and docs/video-generation-provenance.json \u2014 owner-confirmed local Wan2.2 generation; official Apache-2.0 license and generated-output use statement reviewed, with notices retained.",
-  "status": "Owner-authorised v1.0.0 configuration with documented Wan2.2 license basis, passing local build/browser checks and verified live Pages runtime. GitHub Releases and Actions contain the authoritative publication records.",
-  "version": "1.0.0",
-  "stage": "release-validated",
-  "approvalEvidence": "Owner requested normal push, annotated v1.0.0 tag, GitHub Release and Pages deployment in this chat on 15 October 2026, conditional on distribution rights and checks. No additional design approval required.",
+  "status": "Verified v2.0.0 publication authorized on owner-reviewed attribution-conditioned music permission basis. Final film/audio hashes and technical checks retained.",
+  "version": "2.0.0",
+  "stage": "owner-authorized-publication-ready",
+  "approvalEvidence": "Owner final publication instruction, 16 October 2026: personally reviewed music usage information and approved final edited MP4; authorized prepared README/cleanup, main commit/push, new v2.0.0 tag/release and Pages deployment; preserve soundtrack and old releases.",
   "footageProvenance": {
     "credit": "AI-generated cinematic footage: Wan2.2 via local ComfyUI; edited/exported in Clipchamp",
     "generationMethod": "Local ComfyUI (owner-confirmed correction)",
@@ -14,15 +14,15 @@
     "modelCheckpoints": "Wan2.2 family; exact variant and binary hash not retained",
     "modelLicenses": "Official Wan2.2 models: Apache-2.0; generated-output statement verified",
     "inputs": "Owner reports own SHAKTI WebGL scenes and project-specific ChatGPT-generated artwork.",
-    "audio": "Source embedded audio excluded from delivery; independently synthesized original score used.",
+    "audio": "Owner-final Clipchamp edit: embedded original-score opening and identified external festival music; extracted unchanged for runtime. See v2 audio provenance. Prior synthesized-only statement applies to v1.",
     "modelFamily": "Wan2.2 (owner-confirmed)"
   },
   "remainingMediaInput": null,
-  "publicationHandoff": "docs/PUBLICATION-HANDOFF-v1.0.0.md",
-  "liveVerification": {
-    "url": "https://madb0i.github.io/SHAKTI/",
-    "sourceCommit": "6caedd505b4e82defb9201dc26d20a8994dcbbc0",
-    "workflowRun": "https://github.com/MadB0i/SHAKTI/actions/runs/38787705409",
-    "checks": "Desktop/mobile navigation, both clips decoded, uninterrupted 30-second cinematic, four story viewport sizes, direct route reloads, zero HTTP/console/page errors."
-  }
+  "publicationHandoff": "docs/VALIDATION-v2.0.0.md",
+  "audioRightsConfirmed": true,
+  "audioEvidence": "docs/AUDIO-PROVENANCE-v2.0.0.md \u2014 actual uploader attribution-conditioned free-use terms, owner-reviewed scope interpretation and final publication authorization recorded; not a CC0/public-domain claim.",
+  "approvedFilmSha256": "d4b11d61c774f820e17a3fee31ea9ad1e3dc769850c11744ace672f8ef5b6e28",
+  "runtimeAudioSha256": "455e669321ee7e72e0d8f50a2e957ec8fc78fb9320ba1a4aa0504b375ceb151d",
+  "technicalValidationPassed": true,
+  "audioPermissionBasis": "Uploader general free-use statement requires creator/channel credit. It names YouTube/Instagram/Facebook without exclusivity wording or an explicit GitHub/website prohibition. Scope interpretation and owner approval are distinguished from an explicit GitHub-specific grant in the evidence record."
 }

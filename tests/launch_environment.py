@@ -19,10 +19,12 @@ with sync_playwright() as p:
  r['media_http']={}
  for path in ['videos/playback/divine-catch.mp4','videos/playback/divine-finale.mp4','media/shakti-film.mp4','audio/shakti-original.m4a','credits.html','social/shakti-social.jpg']:
   response=pg.request.get(URL+path,headers={'Range':'bytes=0-1023'});r['media_http'][path]={'status':response.status,'type':response.headers.get('content-type'),'range':response.headers.get('content-range')};assert response.status in [200,206]
- # The final teaser and small preview must decode too.
- pg.goto((ROOT/'launch-assets/review.html').as_uri());pg.get_by_role('button',name='Play final teaser').click();pg.wait_for_function("document.getElementById('teaser').ended",timeout=15000)
- r['teaser']=pg.locator('#teaser').evaluate('v=>({duration:v.duration,width:v.videoWidth,height:v.videoHeight,error:v.error,rate:v.playbackRate})')
- r['gif']=pg.locator('img[src$="gif"]').evaluate('e=>({complete:e.complete,width:e.naturalWidth,height:e.naturalHeight})');pg.close();b.close()
+ # The current owner-final watch film decodes without loading archived social exports.
+ pg.goto(URL+'media/shakti-film.mp4');v=pg.locator('video');v.wait_for()
+ pg.wait_for_function('document.querySelector("video").readyState>=2')
+ r['watch-film']=v.evaluate('v=>({duration:v.duration,width:v.videoWidth,height:v.videoHeight,error:v.error})')
+ assert r['watch-film']['duration']==30 and not r['watch-film']['error']
+ pg.close();b.close()
  try:
   w=p.webkit.launch(headless=True);pg=w.new_page(viewport={'width':390,'height':844},has_touch=True);errors=[];pg.on('pageerror',lambda e:errors.append(str(e)))
   pg.goto(URL+'?inspect=1');pg.wait_for_function("document.querySelector('[role=alert]') || document.querySelector('.ignite:not(:disabled)')",timeout=35000)

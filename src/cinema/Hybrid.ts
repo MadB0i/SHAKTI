@@ -39,8 +39,8 @@ export class Hybrid {
  private scoreSource?:AudioBufferSourceNode
  private scoreGain?:GainNode
  private scoreOrigin=0
+ private audioHandoff=false
  private output?:MediaStreamAudioDestinationNode
- private resonanceConnected=false
  private recording=false
  private cancelRecording?:()=>void
  private reduced=matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -63,6 +63,10 @@ export class Hybrid {
    this.onProgress(t)
    if(t>=16&&this.advancing){this.advancing=false;void this.enterMedia(0,!this.reduced||this.motionConsent)}
   },onError)
+  // The owner-approved film is the sole soundtrack; never layer legacy oscillators.
+  this.web.setSound(false)
+  // Preserve every cue time while following the soundtrack's playback clock.
+  this.web.setPlaybackClock(()=>this.scoreSource&&this.audio?Math.max(0,this.audio.currentTime-this.scoreOrigin):undefined)
   this.atmosphere.width=4;this.atmosphere.height=6
   this.canvas.className='film-canvas';this.canvas.setAttribute('aria-hidden','true');this.canvas.hidden=true;host.append(this.canvas)
   this.observer=new ResizeObserver(()=>this.resize());this.observer.observe(host);this.resize()
@@ -79,14 +83,14 @@ export class Hybrid {
    const response=await fetch(BASE+'videos/'+c.file,{signal:this.abort.signal})
    if(!response.ok)throw new Error(`${c.file}: HTTP ${response.status}`)
    const blob=await response.blob();if(this.disposed)return
-   const v=this.videos[i];v.playsInline=true;v.preload='auto';v.controls=false
+   const v=this.videos[i];v.playsInline=true;v.preload='auto';v.controls=false;v.muted=true;v.volume=0
    const url=URL.createObjectURL(blob);this.urls.push(url)
    await new Promise<void>((resolve,reject)=>{v.onloadeddata=()=>resolve();v.onerror=()=>reject(new Error(`${c.file}: unsupported or damaged video`));v.src=url;v.load()})
    if(Math.abs(v.duration-c.duration)>.1)throw new Error(`${c.file}: duration changed; review the 30-second edit before playback`)
    v.onerror=()=>this.fail('A film clip could not decode. Reload to retry.')
    await this.position(v,c.start)
   }))
-  const response=await fetch(BASE+'audio/shakti-original.m4a',{signal:this.abort.signal})
+  const response=await fetch(BASE+'audio/shakti-original.m4a?rev=455e669321ee',{signal:this.abort.signal})
   if(!response.ok)throw new Error('Score could not load')
   this.score=await new OfflineAudioContext(2,1,48000).decodeAudioData(await response.arrayBuffer())
   await Promise.all([document.fonts.load('700 64px Cinzel'),document.fonts.load('600 48px "Noto Serif Bengali"','শুভ দুর্গাপূজা')])
@@ -106,21 +110,20 @@ export class Hybrid {
  private unlock(){
   try{
    if(!this.audio){
-    this.audio=new AudioContext();this.output=this.audio.createMediaStreamDestination()
+    this.audio=new AudioContext({latencyHint:'playback'});this.output=this.audio.createMediaStreamDestination()
     const limiter=this.audio.createDynamicsCompressor();limiter.threshold.value=-3;limiter.knee.value=0;limiter.ratio.value=12;limiter.attack.value=.003;limiter.release.value=.1
     limiter.connect(this.audio.destination);limiter.connect(this.output)
     this.scoreGain=this.audio.createGain();this.scoreGain.gain.value=0;this.scoreGain.connect(limiter)
    }
    void this.audio.resume().catch(()=>{})
-   if(!this.resonanceConnected&&this.web.audioStream&&this.output){this.audio.createMediaStreamSource(this.web.audioStream).connect(this.output);this.resonanceConnected=true}
   }catch{this.fail('Sound could not start. Try reloading, or use Sound off.')}
  }
  ignite(){if(!this.loaded)return;this.web.ignite();this.unlock()}
- replay(){if(!this.loaded)return;this.cancelRecording?.();this.token++;this.videos.forEach(v=>v.pause());this.media=false;this.canvas.hidden=true;this.web.setSuspended(false);this.time=0;this.advancing=true;this.frames=[];this.mediaFrames=[];this.web.replay();this.unlock();void Promise.all(this.videos.map((v,i)=>this.position(v,clips[i].start))).catch(e=>this.fail(String(e)))}
+ replay(){if(!this.loaded)return;this.scoreSource?.stop();this.scoreSource?.disconnect();this.scoreSource=undefined;this.audioHandoff=false;this.cancelRecording?.();this.token++;this.videos.forEach(v=>v.pause());this.media=false;this.canvas.hidden=true;this.web.setSuspended(false);this.time=0;this.advancing=true;this.frames=[];this.mediaFrames=[];this.web.replay();this.unlock();void Promise.all(this.videos.map((v,i)=>this.position(v,clips[i].start))).catch(e=>this.fail(String(e)))}
  private emit(){this.onChange(this.phase,this.playing)}
  private fail(message:string){if(this.disposed)return;this.pause();this.onError(message)}
  private async enterMedia(i:number,play:boolean){
-  const id=++this.token;this.media=true;this.advancing=false;this.playing=false;this.web.setSuspended(true)
+  const id=++this.token;this.audioHandoff=play&&!!this.scoreSource;this.media=true;this.advancing=false;this.playing=false;this.web.setSuspended(true)
   const v=this.videos[i];this.videos.forEach(other=>{if(other!==v)other.pause()})
   try{
    await this.position(v,clips[i].start);if(id!==this.token||this.disposed)return
@@ -131,14 +134,14 @@ export class Hybrid {
  private async playMedia(){
   const id=this.token
   this.unlock();this.motionConsent=true
-  try{if(this.time<HOLD)await this.videos[this.active].play();if(id!==this.token||this.disposed)return;this.playing=true;this.last=performance.now();this.emit()}catch{if(id!==this.token||this.disposed)return;this.playing=false;this.emit();this.onError('Playback was blocked. Reload and press Ignite to allow video playback.')}
+  try{if(this.time<HOLD)await this.videos[this.active].play();if(id!==this.token||this.disposed)return;this.audioHandoff=false;this.playing=true;this.last=performance.now();this.emit()}catch{if(id!==this.token||this.disposed)return;this.audioHandoff=false;this.playing=false;this.updateAudio();this.emit();this.onError('Playback was blocked. Reload and press Ignite to allow video playback.')}
  }
- pause(){this.cancelRecording?.();this.token++;this.advancing=false;if(this.media){this.videos.forEach(v=>v.pause());this.playing=false;this.updateAudio();this.emit()}else{if(this.web.snapshot().playing)this.web.toggle();this.playing=false}}
+ pause(){this.audioHandoff=false;this.cancelRecording?.();this.token++;this.advancing=false;if(this.media){this.videos.forEach(v=>v.pause());this.playing=false;this.updateAudio();this.emit()}else{if(this.web.snapshot().playing)this.web.toggle();this.playing=false}}
  toggle(){if(!this.loaded)return;this.cancelRecording?.();if(this.time>=30)return this.replay();if(this.media){if(this.playing)this.pause();else void this.playMedia()}else{this.web.toggle();this.unlock()}}
- setSound(value:boolean){this.sound=value;this.web.setSound(value);this.updateAudio()}
+ setSound(value:boolean){this.sound=value;this.web.setSound(false);this.updateAudio()}
  async seek(t:number){
   if(!this.loaded)return
-  this.cancelRecording?.()
+  this.audioHandoff=false;this.cancelRecording?.()
   const id=++this.token;this.advancing=false;this.playing=false;this.videos.forEach(v=>v.pause());this.time=Math.max(-1,Math.min(30,t));this.media=this.time>=16
   this.web.setSuspended(false);this.web.seek(Math.min(this.time,16))
   // Render the outgoing gateway before freezing it, including on a direct seek.
@@ -154,8 +157,8 @@ export class Hybrid {
  }
  private updateAudio(){
   if(!this.audio||!this.score||!this.scoreGain)return
-  const t=Math.max(0,this.time),enabled=this.playing&&t<30
-  if(this.scoreSource&&(!enabled||Math.abs(this.audio.currentTime-this.scoreOrigin-t)>.18)){this.scoreSource.stop();this.scoreSource.disconnect();this.scoreSource=undefined}
+  const t=Math.max(0,this.time),enabled=(this.playing||this.audioHandoff)&&t<30
+  if(this.scoreSource&&!enabled){this.scoreSource.stop();this.scoreSource.disconnect();this.scoreSource=undefined}
   if(enabled&&!this.scoreSource){const source=this.audio.createBufferSource();source.buffer=this.score;source.connect(this.scoreGain);source.start(0,t);this.scoreSource=source;this.scoreOrigin=this.audio.currentTime-t}
   this.scoreGain.gain.setTargetAtTime(this.sound&&enabled?1:0,this.audio.currentTime,.012)
  }
@@ -211,7 +214,7 @@ export class Hybrid {
   if(!this.reduced)for(let n=0;n<12;n++){const a=(n*2.399+t*.025),r=(145+n*12)*scale;c.globalAlpha=title*.12*(.5+.5*Math.sin(t*.5+n));c.fillStyle='#f1cf86';c.beginPath();c.arc(tx+Math.cos(a)*r,ty+70*scale+Math.sin(a)*r*.6,(n%3+1)*scale*.45,0,Math.PI*2);c.fill()}
   c.restore()
  }
- snapshot(){const quality=this.videos.map(v=>{const q=v.getVideoPlaybackQuality();return {totalVideoFrames:q.totalVideoFrames,droppedVideoFrames:q.droppedVideoFrames,corruptedVideoFrames:q.corruptedVideoFrames}});return {...this.web.snapshot(),time:this.time,phase:this.phase,playing:this.playing,duration:30,frameMs:[...this.frames],mediaFrameMs:[...this.mediaFrames],media:this.media?{clip:clips[this.active].file,sourceTime:this.videos[this.active].currentTime,readyState:this.videos[this.active].readyState,quality:quality[this.active],scoreGain:this.scoreGain?.gain.value}:null,videoQuality:quality,audioBus:{state:this.audio?.state,sampleRate:this.audio?.sampleRate,baseLatency:this.audio?.baseLatency,outputLatency:this.audio?.outputLatency},recording:this.recording,fonts:document.fonts.check('600 48px "Noto Serif Bengali"','শুভ দুর্গাপূজা')}}
+ snapshot(){const quality=this.videos.map(v=>{const q=v.getVideoPlaybackQuality();return {totalVideoFrames:q.totalVideoFrames,droppedVideoFrames:q.droppedVideoFrames,corruptedVideoFrames:q.corruptedVideoFrames}});return {...this.web.snapshot(),time:this.time,phase:this.phase,playing:this.playing,duration:30,frameMs:[...this.frames],mediaFrameMs:[...this.mediaFrames],media:this.media?{clip:clips[this.active].file,sourceTime:this.videos[this.active].currentTime,readyState:this.videos[this.active].readyState,quality:quality[this.active],scoreGain:this.scoreGain?.gain.value}:null,videoQuality:quality,audioBus:{state:this.audio?.state,sampleRate:this.audio?.sampleRate,baseLatency:this.audio?.baseLatency,outputLatency:this.audio?.outputLatency,scorePlaying:!!this.scoreSource,scoreOffset:this.scoreSource&&this.audio?this.audio.currentTime-this.scoreOrigin:null,sound:this.sound,bufferDuration:this.score?.duration},recording:this.recording,fonts:document.fonts.check('600 48px "Noto Serif Bengali"','শুভ দুর্গাপূজা')}}
  async record():Promise<Blob>{
   if(this.recording)throw new Error('A recording is already running')
   if(!this.loaded)throw new Error('Wait for the film to finish loading')

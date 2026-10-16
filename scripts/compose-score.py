@@ -1,3 +1,5 @@
+# Historical v1 source, retained for provenance. Superseded by the owner-approved v2 MP4.
+raise SystemExit("Retired v1 exporter: preserve docs/media/shakti-cinematic.mp4. See docs/DEVELOPMENT.md.")
 """Original synthesized score; no samples or generated music. Festival-inspired,
 not authentic recorded dhaak/shankh. Copyright 2026 Rupjyoti Talukdar. MIT.
 """

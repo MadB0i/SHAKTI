@@ -1,0 +1,58 @@
+[
+  {
+    "path": "launch-assets/video/SHAKTI-Desktop-1440x810.mp4",
+    "bytes": 11991384,
+    "sha256": "fac3f5e1e683642c5f6e0563ccd5a7fa863413809f6f21c43963db8993440a12",
+    "tracked": true,
+    "backup": "External hash-verified SHAKTI-Social-Masters/v2-preparation-2026-10-16/launch-assets/video/SHAKTI-Desktop-1440x810.mp4"
+  },
+  {
+    "path": "launch-assets/video/SHAKTI-Reel-1080x1920.mp4",
+    "bytes": 20579569,
+    "sha256": "b3e94f241747402f800652d5cbcb5ccaee9a729511e3ff197c3ff99b7f11d7f4",
+    "tracked": true,
+    "backup": "External hash-verified SHAKTI-Social-Masters/v2-preparation-2026-10-16/launch-assets/video/SHAKTI-Reel-1080x1920.mp4"
+  },
+  {
+    "path": "launch-assets/video/SHAKTI-Teaser-8.5s.mp4",
+    "bytes": 4605288,
+    "sha256": "7e75e455fb165bf27b0427138fcdffbd98f69c37b1713d18246d998cdc56bce5",
+    "tracked": true,
+    "backup": "External hash-verified SHAKTI-Social-Masters/v2-preparation-2026-10-16/launch-assets/video/SHAKTI-Teaser-8.5s.mp4"
+  },
+  {
+    "path": "launch-assets/video/SHAKTI-X-Teaser.mp4",
+    "bytes": 1318062,
+    "sha256": "f36eb1473ac1680161a70cdc1f9568325b235fe938d1d57880032ebcb883f9f7",
+    "tracked": true,
+    "backup": "External hash-verified SHAKTI-Social-Masters/v2-preparation-2026-10-16/launch-assets/video/SHAKTI-X-Teaser.mp4"
+  },
+  {
+    "path": "launch-assets/covers/SHAKTI-GitHub-LinkedIn-1200x630.jpg",
+    "bytes": 142333,
+    "sha256": "53669eb55069db8d0ed2d3154addf9eafe99011c0721f91b4ace6e8b75250dee",
+    "tracked": true,
+    "backup": "External hash-verified SHAKTI-Social-Masters/v2-preparation-2026-10-16/launch-assets/covers/SHAKTI-GitHub-LinkedIn-1200x630.jpg"
+  },
+  {
+    "path": "launch-assets/covers/SHAKTI-Reel-Cover-1080x1920.jpg",
+    "bytes": 91751,
+    "sha256": "6fc7ee584630db15c985cd4bf8b3faf1dc10a7293be81fec7dc2c9e2e4116d04",
+    "tracked": true,
+    "backup": "External hash-verified SHAKTI-Social-Masters/v2-preparation-2026-10-16/launch-assets/covers/SHAKTI-Reel-Cover-1080x1920.jpg"
+  },
+  {
+    "path": "launch-assets/social/SHAKTI-GitHub-Preview.gif",
+    "bytes": 7219201,
+    "sha256": "89130fb6473b645bec8924c3222c9796eb537c2c4477eb55afce84ff724b5bc2",
+    "tracked": false,
+    "backup": "External hash-verified SHAKTI-Social-Masters/v2-preparation-2026-10-16/launch-assets/social/SHAKTI-GitHub-Preview.gif"
+  },
+  {
+    "path": "launch-assets/social/SHAKTI-Reel-Cover.png",
+    "bytes": 1368019,
+    "sha256": "c9fa701d3c88fa3774f0862b871c93d43439178f8c161ebd9f11e96d1b928a80",
+    "tracked": false,
+    "backup": "External hash-verified SHAKTI-Social-Masters/v2-preparation-2026-10-16/launch-assets/social/SHAKTI-Reel-Cover.png"
+  }
+]
