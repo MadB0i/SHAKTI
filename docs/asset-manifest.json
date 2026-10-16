@@ -1,8 +1,8 @@
 {
-  "version": "2.0.0",
-  "release": "v2.0.0 — owner-authorized; music attribution and actual terms retained",
+  "version": "2.0.1",
+  "release": "v2.0.1 — owner-authorized; music attribution and actual terms retained",
   "base": "/SHAKTI/",
-  "total_bytes": 25695612,
+  "total_bytes": 25724939,
   "files": [
     {
       "file": "DEPENDENCY-LICENSES.txt",
@@ -53,9 +53,9 @@
       "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
     },
     {
-      "file": "assets/App-NN-2OvqG.js",
+      "file": "assets/App-QGIXLIxy.js",
       "bytes": 769757,
-      "sha256": "d20d7723ff401b3040b2f9a882fef025f13441544f9393848ee170a33572328a",
+      "sha256": "2b0ff8fc9ea04ca98fc790edc09e8a95587fdfbe896c8632be7d2a3a8136af14",
       "origin_terms": "Original authored contributions plus bundled dependencies; see DEPENDENCY-LICENSES.txt (GSAP separate proprietary license)"
     },
     {
@@ -65,16 +65,16 @@
       "origin_terms": "Cinzel / Noto Serif Bengali: SIL OFL 1.1; retained font notices"
     },
     {
-      "file": "assets/Discover-C8ORFKEn.js",
-      "bytes": 24711,
-      "sha256": "806c41a9381de35a9be3562c3175f863465484989af047f3e09757a2ea755539",
-      "origin_terms": "Original authored contributions plus bundled dependencies; see DEPENDENCY-LICENSES.txt (GSAP separate proprietary license)"
+      "file": "assets/Discover-BuyqVkfZ.css",
+      "bytes": 19270,
+      "sha256": "4c0db97f491f7d435ca47c491d3f5819e8612d9bfde4ee49c33d4266f9b9eed2",
+      "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
     },
     {
-      "file": "assets/Discover-Cu0ybEXk.css",
-      "bytes": 14998,
-      "sha256": "f5a33de4642b8a2f3252fab2855fac689c67b6132233ec9562c6e5f45a65c5b5",
-      "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
+      "file": "assets/Discover-D10whBrP.js",
+      "bytes": 33358,
+      "sha256": "0a7ee3c2937b756c9d4c9d661937367bd48463a23e1784e730335f1bedaf1b3f",
+      "origin_terms": "Original authored contributions plus bundled dependencies; see DEPENDENCY-LICENSES.txt (GSAP separate proprietary license)"
     },
     {
       "file": "assets/NotoSerifBengali-Br7R9OGU.ttf",
@@ -83,16 +83,22 @@
       "origin_terms": "Cinzel / Noto Serif Bengali: SIL OFL 1.1; retained font notices"
     },
     {
+      "file": "assets/discover-bengali-ljJ76xdV.ttf",
+      "bytes": 16408,
+      "sha256": "6c83475aa21a7ec7c3c3d07381b7a8ba6076c88e2ad609d99a82d15f3b0b06d3",
+      "origin_terms": "Cinzel / Noto Serif Bengali: SIL OFL 1.1; retained font notices"
+    },
+    {
+      "file": "assets/index-DN3vDf28.js",
+      "bytes": 144106,
+      "sha256": "32b9354324f96a99bfd386989de719df39acf6fb06a1b72096715bb2a7c16d26",
+      "origin_terms": "Original authored contributions plus bundled dependencies; see DEPENDENCY-LICENSES.txt (GSAP separate proprietary license)"
+    },
+    {
       "file": "assets/index-DVg_ShJP.css",
       "bytes": 11498,
       "sha256": "6a7f61e91674b5fdbe8f6ea10a7861023fe1ffec631356c51a2e68dcdf787763",
       "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
-    },
-    {
-      "file": "assets/index-il6vMn4y.js",
-      "bytes": 144106,
-      "sha256": "1ff8b729a6e48690c16abfcb0151015a86473c77ba3295972b15ab9af8a20785",
-      "origin_terms": "Original authored contributions plus bundled dependencies; see DEPENDENCY-LICENSES.txt (GSAP separate proprietary license)"
     },
     {
       "file": "audio/shakti-original.m4a",
@@ -109,7 +115,7 @@
     {
       "file": "discover/index.html",
       "bytes": 1240,
-      "sha256": "85b8bd58a9e76935fd4b5262e41d2c40f8570ba5b9784a7bec2b14e399aed291",
+      "sha256": "272d5104f6253566078f585d2e8220df588f323c622a25b16e75be74bd0e9d50",
       "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
     },
     {
@@ -133,7 +139,7 @@
     {
       "file": "index.html",
       "bytes": 1211,
-      "sha256": "b6d33cfef0fc881a3e67ee426475d1e720a05b4c84df78e1aa7f21f780c5f0f1",
+      "sha256": "512bf40944506ee8ffbffd91883fbf57210f590eca5d6760f410e56fcdc9cf89",
       "origin_terms": "Original authored contributions / retained notices; MIT applies only to original contributions"
     },
     {

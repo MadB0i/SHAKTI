@@ -1,0 +1,497 @@
+{
+  "version": "2.0.1",
+  "scope": [
+    "reviewed discover correction only",
+    "single-shot README still and sequential GIF"
+  ],
+  "reviewed_patch_sha256": "3b2f3614c1debe963e1b9244e5dc6b6e0c6fcbd451d696d87f91c5eae73a6461",
+  "discover": {
+    "checks": [
+      "Calendar selection, URL reload and native radio arrows",
+      "Keyboard disclosures and chapter links",
+      "Five responsive viewports including 360x640",
+      "Pause/resume and OS reduced motion",
+      "No-observer visible fallback",
+      "Direct routes and internal links",
+      "No film, video, WebGL or audio downloads on discover",
+      "Cold mobile network/CPU simulation"
+    ],
+    "errors": [],
+    "viewports": {
+      "desktop": {
+        "overflow": false,
+        "revealed": 16,
+        "styles": {
+          "font": "Georgia, \"Times New Roman\", serif",
+          "size": "21.328px",
+          "color": "rgb(101, 81, 68)"
+        },
+        "tab_stops": 69
+      },
+      "mobile": {
+        "overflow": false,
+        "revealed": 13,
+        "styles": {
+          "font": "Georgia, \"Times New Roman\", serif",
+          "size": "16px",
+          "color": "rgb(101, 81, 68)"
+        },
+        "tab_stops": 69
+      },
+      "9x16": {
+        "overflow": false,
+        "revealed": 13,
+        "styles": {
+          "font": "Georgia, \"Times New Roman\", serif",
+          "size": "16px",
+          "color": "rgb(101, 81, 68)"
+        }
+      },
+      "small": {
+        "overflow": false,
+        "revealed": 13,
+        "styles": {
+          "font": "Georgia, \"Times New Roman\", serif",
+          "size": "16px",
+          "color": "rgb(101, 81, 68)"
+        }
+      },
+      "tablet": {
+        "overflow": false,
+        "revealed": 15,
+        "styles": {
+          "font": "Georgia, \"Times New Roman\", serif",
+          "size": "21.328px",
+          "color": "rgb(101, 81, 68)"
+        }
+      }
+    },
+    "axe": {
+      "desktop": [],
+      "mobile": [],
+      "9x16": [],
+      "small": [],
+      "tablet": []
+    },
+    "performance": {
+      "lcp": 1240,
+      "cls": 0,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4187/SHAKTI/assets/index-DN3vDf28.js",
+          "bytes": 46849,
+          "decoded": 144106
+        },
+        {
+          "url": "http://127.0.0.1:4187/SHAKTI/assets/index-DVg_ShJP.css",
+          "bytes": 3396,
+          "decoded": 11498
+        },
+        {
+          "url": "http://127.0.0.1:4187/SHAKTI/assets/Discover-D10whBrP.js",
+          "bytes": 11685,
+          "decoded": 33358
+        },
+        {
+          "url": "http://127.0.0.1:4187/SHAKTI/assets/Discover-BuyqVkfZ.css",
+          "bytes": 4657,
+          "decoded": 19270
+        },
+        {
+          "url": "http://127.0.0.1:4187/SHAKTI/assets/Cinzel-Dzu6Mfm8.ttf",
+          "bytes": 125768,
+          "decoded": 125468
+        }
+      ],
+      "paints": [
+        {
+          "name": "first-paint",
+          "time": 392
+        },
+        {
+          "name": "first-contentful-paint",
+          "time": 692
+        }
+      ],
+      "transfer_bytes": 192355,
+      "budget_bytes": 400000,
+      "budget_lcp_ms": 3500,
+      "budget_cls": 0.1
+    },
+    "links": [
+      {
+        "url": "http://127.0.0.1:4187/SHAKTI/",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4187/SHAKTI/discover/",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4187/SHAKTI/discover/index.html",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4187/SHAKTI/credits.html",
+        "status": 200
+      }
+    ],
+    "passed": true
+  },
+  "playback": {
+    "errors": [],
+    "http_errors": [],
+    "checks": [
+      "desktop: normal full playback, one audio buffer at a time, no resonance output, muted video clips, forward/backward seeks, actual-output mute/unmute, pause silence and replay passed",
+      "mobile: normal full playback, one audio buffer at a time, no resonance output, muted video clips, forward/backward seeks, actual-output mute/unmute, pause silence and replay passed"
+    ],
+    "full_playback": {
+      "desktop": {
+        "wall_seconds": 30.39000000001397,
+        "samples": [
+          {
+            "film_time": 1,
+            "audio_offset": 1,
+            "drift": 0,
+            "peak": 0.09479306638240814
+          },
+          {
+            "film_time": 4,
+            "audio_offset": 4,
+            "drift": 0,
+            "peak": 0.13666017353534698
+          },
+          {
+            "film_time": 8,
+            "audio_offset": 8,
+            "drift": 0,
+            "peak": 0.2253093719482422
+          },
+          {
+            "film_time": 12,
+            "audio_offset": 12,
+            "drift": 0,
+            "peak": 0.1132272332906723
+          },
+          {
+            "film_time": 15.8,
+            "audio_offset": 15.8,
+            "drift": 0.0,
+            "peak": 0.09484919905662537
+          },
+          {
+            "film_time": 16.111759,
+            "audio_offset": 16.141333333333332,
+            "drift": 0.029574333333332703,
+            "peak": 0.11701495945453644
+          },
+          {
+            "film_time": 17.705347,
+            "audio_offset": 17.76,
+            "drift": 0.05465300000000184,
+            "peak": 0.17092692852020264
+          },
+          {
+            "film_time": 20.004202000000003,
+            "audio_offset": 20.061333333333334,
+            "drift": 0.05713133333333076,
+            "peak": 0.3233857750892639
+          },
+          {
+            "film_time": 24.012452000000003,
+            "audio_offset": 24.061333333333334,
+            "drift": 0.048881333333330446,
+            "peak": 0.1266234666109085
+          },
+          {
+            "film_time": 27.00437,
+            "audio_offset": 27.061333333333334,
+            "drift": 0.056963333333332145,
+            "peak": 0.3598894476890564
+          },
+          {
+            "film_time": 29.704100000000135,
+            "audio_offset": 29.76,
+            "drift": 0.05589999999986617,
+            "peak": 0.24117624759674072
+          },
+          {
+            "film_time": 30,
+            "audio_offset": null,
+            "drift": null,
+            "peak": 0
+          }
+        ],
+        "audio_audit": {
+          "starts": [
+            {
+              "at": 0,
+              "offset": 0,
+              "duration": 30
+            }
+          ],
+          "stops": [
+            30.061333333333334
+          ],
+          "maxActive": 1,
+          "videoPlays": [
+            {
+              "muted": true,
+              "volume": 0
+            },
+            {
+              "muted": true,
+              "volume": 0
+            }
+          ]
+        },
+        "video_quality": [
+          {
+            "totalVideoFrames": 52,
+            "droppedVideoFrames": 0,
+            "corruptedVideoFrames": 0
+          },
+          {
+            "totalVideoFrames": 304,
+            "droppedVideoFrames": 0,
+            "corruptedVideoFrames": 0
+          }
+        ],
+        "time": 30,
+        "decoded_buffer_duration": 30,
+        "browser_source_first_2s_correlation": 1.0,
+        "AAC_rounding_note": "Browser decoder reports one sample less than 30 seconds; film clock and MP4/M4A metadata remain exactly 30 seconds. Opening PCM correlation verifies no inserted start delay."
+      },
+      "mobile": {
+        "wall_seconds": 30.07799999997951,
+        "samples": [
+          {
+            "film_time": 1.0186666666666668,
+            "audio_offset": 1.0186666666666668,
+            "drift": 0.0,
+            "peak": 0.09479306638240814
+          },
+          {
+            "film_time": 4,
+            "audio_offset": 4,
+            "drift": 0,
+            "peak": 0.13666017353534698
+          },
+          {
+            "film_time": 8,
+            "audio_offset": 8,
+            "drift": 0,
+            "peak": 0.2253093719482422
+          },
+          {
+            "film_time": 12,
+            "audio_offset": 12,
+            "drift": 0,
+            "peak": 0.09216539561748505
+          },
+          {
+            "film_time": 15.818666666666667,
+            "audio_offset": 15.818666666666667,
+            "drift": 0.0,
+            "peak": 0.10440070927143097
+          },
+          {
+            "film_time": 16.105621,
+            "audio_offset": 16.12,
+            "drift": 0.014379000000001696,
+            "peak": 0.13417162001132965
+          },
+          {
+            "film_time": 17.705745,
+            "audio_offset": 17.759999999999998,
+            "drift": 0.05425499999999772,
+            "peak": 0.17092692852020264
+          },
+          {
+            "film_time": 20.004811,
+            "audio_offset": 20.058666666666667,
+            "drift": 0.05385566666666719,
+            "peak": 0.3233857750892639
+          },
+          {
+            "film_time": 24.010842,
+            "audio_offset": 24.058666666666667,
+            "drift": 0.04782466666666707,
+            "peak": 0.13425074517726898
+          },
+          {
+            "film_time": 27.004364000000002,
+            "audio_offset": 27.058666666666667,
+            "drift": 0.054302666666664834,
+            "peak": 0.35891780257225037
+          },
+          {
+            "film_time": 29.704000000000164,
+            "audio_offset": 29.759999999999998,
+            "drift": 0.05599999999983396,
+            "peak": 0.4481450915336609
+          },
+          {
+            "film_time": 30,
+            "audio_offset": null,
+            "drift": null,
+            "peak": 0
+          }
+        ],
+        "audio_audit": {
+          "starts": [
+            {
+              "at": 0.06133333333333333,
+              "offset": 0,
+              "duration": 30
+            }
+          ],
+          "stops": [
+            30.101333333333333
+          ],
+          "maxActive": 1,
+          "videoPlays": [
+            {
+              "muted": true,
+              "volume": 0
+            },
+            {
+              "muted": true,
+              "volume": 0
+            }
+          ]
+        },
+        "video_quality": [
+          {
+            "totalVideoFrames": 52,
+            "droppedVideoFrames": 0,
+            "corruptedVideoFrames": 0
+          },
+          {
+            "totalVideoFrames": 304,
+            "droppedVideoFrames": 0,
+            "corruptedVideoFrames": 0
+          }
+        ],
+        "time": 30,
+        "decoded_buffer_duration": 30,
+        "browser_source_first_2s_correlation": 1.0,
+        "AAC_rounding_note": "Browser decoder reports one sample less than 30 seconds; film clock and MP4/M4A metadata remain exactly 30 seconds. Opening PCM correlation verifies no inserted start delay."
+      }
+    },
+    "owner_movie_playback": {
+      "duration": 30,
+      "time": 30,
+      "width": 1080,
+      "height": 1920,
+      "rate": 1,
+      "muted": false,
+      "error": null,
+      "quality": {
+        "total": 905,
+        "dropped": 0,
+        "corrupted": 0
+      },
+      "wall_seconds": 30.10899999999674
+    },
+    "passed": true
+  },
+  "native_runtime_film": {
+    "duration": 30,
+    "time": 30,
+    "ended": true,
+    "muted": false,
+    "width": 540,
+    "height": 960,
+    "quality": {
+      "totalVideoFrames": 904,
+      "droppedVideoFrames": 0,
+      "corruptedVideoFrames": 0
+    },
+    "error": null,
+    "wall_seconds": 30.07799999997951,
+    "errors": [],
+    "source": "http://127.0.0.1:4187/SHAKTI/media/shakti-film.mp4",
+    "passed": true
+  },
+  "media": {
+    "unchanged_hashes": {
+      "docs/media/shakti-cinematic.mp4": "d4b11d61c774f820e17a3fee31ea9ad1e3dc769850c11744ace672f8ef5b6e28",
+      "public/media/shakti-film.mp4": "407b07df1211a9b228e351904182b8c3f1959a3e6edf028b5d3e5c1f560ac992",
+      "public/audio/shakti-original.m4a": "455e669321ee7e72e0d8f50a2e957ec8fc78fb9320ba1a4aa0504b375ceb151d",
+      "src/cinema/Hybrid.ts": "900bc409fed71ba39964d438dd37852603689e2472830c3706d10b9a7e5f2998",
+      "src/cinema/Experience.ts": "ff26d5241ea1cf5a4cfc278416edcdad1fa0d1ae89947414db2688cb9cbb9e13",
+      "src/cinema/Resonance.ts": "b568f6a1243fc786c7ceec04a3ea160133712ebe9852e724e0842236f6fe5dfa",
+      "docs/AUDIO-PROVENANCE-v2.0.0.md": "b5b84f00cda6cd853b561597532fdeda36506739f030dfada1cb2a104995937c",
+      "docs/CREDITS.md": "01fda47973beec7e33167e865941d60e454e71bc420facf35de516b480e28494"
+    },
+    "film": {
+      "docs/media/shakti-cinematic.mp4": {
+        "duration": 30,
+        "frames": 900,
+        "audio": "AAC unchanged",
+        "full_decode": "passed",
+        "pixels": [
+          1080,
+          1920
+        ]
+      },
+      "public/media/shakti-film.mp4": {
+        "duration": 30,
+        "frames": 900,
+        "audio": "AAC unchanged",
+        "full_decode": "passed",
+        "pixels": [
+          540,
+          960
+        ]
+      }
+    },
+    "gif": {
+      "source": "docs/media/shakti-cinematic.mp4",
+      "hero_frame_seconds": 24.2,
+      "hero_pixels": [
+        1080,
+        1920
+      ],
+      "gif_pixels": [
+        432,
+        768
+      ],
+      "gif_frames": 96,
+      "gif_seconds": 9.6,
+      "fps": 10,
+      "shots": [
+        {
+          "subject": "Diya",
+          "source_start_seconds": 0.6,
+          "source_duration_seconds": 2.4,
+          "output_start_seconds": 0.0
+        },
+        {
+          "subject": "Trishul",
+          "source_start_seconds": 9.0,
+          "source_duration_seconds": 2.4,
+          "output_start_seconds": 2.4
+        },
+        {
+          "subject": "Cosmic gateway",
+          "source_start_seconds": 14.4,
+          "source_duration_seconds": 2.4,
+          "output_start_seconds": 4.8
+        },
+        {
+          "subject": "Maa Durga",
+          "source_start_seconds": 21.0,
+          "source_duration_seconds": 2.4,
+          "output_start_seconds": 7.2
+        }
+      ],
+      "transition": "0.16-second dip to black at shot boundaries; no overlap, compositing, split screen or crop",
+      "gif_bytes": 8344531,
+      "hero_bytes": 190396
+    },
+    "passed": true
+  },
+  "public_verification": "Performed after deployment; actual public README/discover screenshots and URL/release checks are retained in the correction review output, outside the repository."
+}

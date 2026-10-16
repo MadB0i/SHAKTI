@@ -1,0 +1,44 @@
+{
+  "source": "docs/media/shakti-cinematic.mp4",
+  "hero_frame_seconds": 24.2,
+  "hero_pixels": [
+    1080,
+    1920
+  ],
+  "gif_pixels": [
+    432,
+    768
+  ],
+  "gif_frames": 96,
+  "gif_seconds": 9.6,
+  "fps": 10,
+  "shots": [
+    {
+      "subject": "Diya",
+      "source_start_seconds": 0.6,
+      "source_duration_seconds": 2.4,
+      "output_start_seconds": 0.0
+    },
+    {
+      "subject": "Trishul",
+      "source_start_seconds": 9.0,
+      "source_duration_seconds": 2.4,
+      "output_start_seconds": 2.4
+    },
+    {
+      "subject": "Cosmic gateway",
+      "source_start_seconds": 14.4,
+      "source_duration_seconds": 2.4,
+      "output_start_seconds": 4.8
+    },
+    {
+      "subject": "Maa Durga",
+      "source_start_seconds": 21.0,
+      "source_duration_seconds": 2.4,
+      "output_start_seconds": 7.2
+    }
+  ],
+  "transition": "0.16-second dip to black at shot boundaries; no overlap, compositing, split screen or crop",
+  "gif_bytes": 8344531,
+  "hero_bytes": 190396
+}

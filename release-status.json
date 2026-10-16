@@ -2,10 +2,10 @@
   "publicReleaseApproved": true,
   "footageRightsConfirmed": true,
   "footageEvidence": "docs/COMFYUI-MODEL-LICENSES.md and docs/video-generation-provenance.json \u2014 owner-confirmed local Wan2.2 generation; official Apache-2.0 license and generated-output use statement reviewed, with notices retained.",
-  "status": "Verified v2.0.0 publication authorized on owner-reviewed attribution-conditioned music permission basis. Final film/audio hashes and technical checks retained.",
-  "version": "2.0.0",
+  "status": "Owner-authorized focused post-release correction: reviewed discover port and single-shot README media. Approved film/audio and v2.0.0 history preserved.",
+  "version": "2.0.1",
   "stage": "owner-authorized-publication-ready",
-  "approvalEvidence": "Owner final publication instruction, 16 October 2026: personally reviewed music usage information and approved final edited MP4; authorized prepared README/cleanup, main commit/push, new v2.0.0 tag/release and Pages deployment; preserve soundtrack and old releases.",
+  "approvalEvidence": "Owner v2.0.1 urgent post-release instruction, 16 October 2026: authorize only discover corrective port and README media replacement, normal commit/push, new tag/release, Pages deployment and actual public-page verification.",
   "footageProvenance": {
     "credit": "AI-generated cinematic footage: Wan2.2 via local ComfyUI; edited/exported in Clipchamp",
     "generationMethod": "Local ComfyUI (owner-confirmed correction)",
@@ -18,7 +18,7 @@
     "modelFamily": "Wan2.2 (owner-confirmed)"
   },
   "remainingMediaInput": null,
-  "publicationHandoff": "docs/VALIDATION-v2.0.0.md",
+  "publicationHandoff": "docs/VALIDATION-v2.0.1.md",
   "audioRightsConfirmed": true,
   "audioEvidence": "docs/AUDIO-PROVENANCE-v2.0.0.md \u2014 actual uploader attribution-conditioned free-use terms, owner-reviewed scope interpretation and final publication authorization recorded; not a CC0/public-domain claim.",
   "approvedFilmSha256": "d4b11d61c774f820e17a3fee31ea9ad1e3dc769850c11744ace672f8ef5b6e28",
